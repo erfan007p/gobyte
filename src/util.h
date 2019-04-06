@@ -43,7 +43,8 @@
 #endif
 
 //GoByte only features
-
+// Application startup time (used for uptime calculation)
+int64_t GetStartupTime();
 extern bool fMasterNode;
 extern bool fLiteMode;
 extern int nWalletBackups;

@@ -116,7 +116,7 @@ bool fLiteMode = false;
         -2      - disabled because wallet was locked and we were not able to replenish keypool
 */
 int nWalletBackups = 10;
-
+const int64_t nStartupTime = GetTime();
 const char * const BITCOIN_CONF_FILENAME = "gobyte.conf";
 const char * const BITCOIN_PID_FILENAME = "gobyted.pid";
 
@@ -1002,4 +1002,10 @@ std::string SafeIntVersionToString(uint32_t nVersion)
     {
         return "invalid_version";
     }
+}
+
+// Obtain the application startup time (used for uptime calculation)
+int64_t GetStartupTime()
+{
+    return nStartupTime;
 }

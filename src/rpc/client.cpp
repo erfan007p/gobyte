@@ -27,6 +27,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
 {
     { "stop", 0 },
     { "setmocktime", 0 },
+    { "uptime", 0 },
     { "getaddednodeinfo", 0 },
     { "setgenerate", 0 },
     { "setgenerate", 1 },
@@ -92,6 +93,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "getblockheader", 1 },
     { "getblockheaders", 1 },
     { "getblockheaders", 2 },
+    { "getchaintxstats", 0 },
     { "gettransaction", 1 },
     { "getrawtransaction", 1 },
     { "createrawtransaction", 0 },
