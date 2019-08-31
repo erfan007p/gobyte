@@ -502,3 +502,4 @@ bool CCryptoKeyStore::GetHDChain(CHDChain& hdChainRet) const
     hdChainRet = hdChain;
     return !hdChain.IsNull();
 }
+

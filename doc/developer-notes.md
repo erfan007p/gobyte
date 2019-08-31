@@ -497,3 +497,4 @@ Git and GitHub tips
   This will add an `upstream-pull` remote to your git repository, which can be fetched using `git fetch --all`
   or `git fetch upstream-pull`. Afterwards, you can use `upstream-pull/NUMBER/head` in arguments to `git show`,
   `git checkout` and anywhere a commit id would be acceptable to see the changes from pull request NUMBER.
+

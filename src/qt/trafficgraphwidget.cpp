@@ -178,3 +178,4 @@ void TrafficGraphWidget::clear()
     }
     update();
 }
+

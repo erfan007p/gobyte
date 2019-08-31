@@ -75,3 +75,4 @@ if [ "$tree_actual_tree" != "$tree_subtree" ]; then
     exit 1
 fi
 echo "GOOD"
+

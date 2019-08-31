@@ -237,3 +237,4 @@ class MaxUploadTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     MaxUploadTest().main()
+

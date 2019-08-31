@@ -18,3 +18,4 @@ static int secp256k1_schnorr_sig_recover(const secp256k1_ecmult_context* ctx, co
 static int secp256k1_schnorr_sig_combine(unsigned char *sig64, size_t n, const unsigned char * const *sig64ins);
 
 #endif
+

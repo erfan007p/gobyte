@@ -452,3 +452,4 @@ class PruneTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     PruneTest().main()
+

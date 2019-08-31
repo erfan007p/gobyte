@@ -80,3 +80,4 @@ def get_legacy_sigopcount_tx(tx, fAccurate=True):
         # scriptSig might be of type bytes, so convert to CScript for the moment
         count += CScript(j.scriptSig).GetSigOpCount(fAccurate)
     return count
+

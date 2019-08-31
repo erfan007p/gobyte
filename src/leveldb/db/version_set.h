@@ -396,3 +396,4 @@ class Compaction {
 }  // namespace leveldb
 
 #endif  // STORAGE_LEVELDB_DB_VERSION_SET_H_
+

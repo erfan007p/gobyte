@@ -25,3 +25,4 @@ bool CZMQAbstractNotifier::NotifyTransactionLock(const CTransaction &/*transacti
 {
     return true;
 }
+

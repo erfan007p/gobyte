@@ -296,3 +296,4 @@ void sph_skein512_addbits_and_close(
 #endif
 
 #endif
+

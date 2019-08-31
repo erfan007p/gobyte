@@ -402,3 +402,4 @@ public:
 
 
 #endif // BITCOIN_PROTOCOL_H
+

@@ -59,3 +59,4 @@ void UnregisterAllValidationInterfaces() {
     g_signals.NotifyHeaderTip.disconnect_all_slots();
     g_signals.AcceptedBlockHeader.disconnect_all_slots();
 }
+

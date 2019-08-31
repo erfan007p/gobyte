@@ -19,3 +19,4 @@ std::string GetWarnings(const std::string& strFor);
 static const bool DEFAULT_TESTSAFEMODE = false;
 
 #endif //  BITCOIN_WARNINGS_H
+

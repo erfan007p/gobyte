@@ -1981,3 +1981,4 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     return !fRequestShutdown;
 }
+

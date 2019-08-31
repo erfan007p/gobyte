@@ -92,3 +92,4 @@ struct Params {
 } // namespace Consensus
 
 #endif // BITCOIN_CONSENSUS_PARAMS_H
+

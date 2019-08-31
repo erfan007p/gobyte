@@ -509,3 +509,4 @@ bool CCoinsViewDB::Upgrade() {
     LogPrintf("[%s].\n", ShutdownRequested() ? "CANCELLED" : "DONE");
     return !ShutdownRequested();
 }
+

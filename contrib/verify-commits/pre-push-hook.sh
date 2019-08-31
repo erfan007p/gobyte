@@ -18,3 +18,4 @@ while read LINE; do
         exit 1
     fi
 done < /dev/stdin
+

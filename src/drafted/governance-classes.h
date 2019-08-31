@@ -644,3 +644,4 @@ bool CreateNewGovernanceObject(UniValue& govObjJson, CGovernanceNode& govObj, Go
 
 
 #endif
+

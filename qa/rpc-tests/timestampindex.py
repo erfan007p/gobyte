@@ -48,3 +48,4 @@ class TimestampIndexTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     TimestampIndexTest().main()
+

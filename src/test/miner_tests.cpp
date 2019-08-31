@@ -389,3 +389,4 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

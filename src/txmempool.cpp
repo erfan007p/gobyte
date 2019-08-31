@@ -1312,3 +1312,4 @@ bool CTxMemPool::TransactionWithinChainLimit(const uint256& txid, size_t chainLi
 }
 
 SaltedTxidHasher::SaltedTxidHasher() : k0(GetRand(std::numeric_limits<uint64_t>::max())), k1(GetRand(std::numeric_limits<uint64_t>::max())) {}
+

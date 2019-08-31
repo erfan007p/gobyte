@@ -36,3 +36,4 @@ static void secp256k1_rand256_test(unsigned char *b32);
 static void secp256k1_rand_bytes_test(unsigned char *bytes, size_t len);
 
 #endif
+

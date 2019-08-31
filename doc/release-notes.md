@@ -100,3 +100,4 @@ These release are considered obsolete. Old release notes can be found here:
 - [v0.10.x](https://github.com/gobytecoin/gobyte/blob/master/doc/release-notes/gobyte/release-notes-0.10.0.md) released Sep/25/2014
 - [v0.9.x](https://github.com/gobytecoin/gobyte/blob/master/doc/release-notes/gobyte/release-notes-0.9.0.md) released Mar/13/2014
 
+

@@ -248,3 +248,4 @@ public:
 };
 
 #endif // BITCOIN_PUBKEY_H
+

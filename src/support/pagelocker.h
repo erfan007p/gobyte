@@ -175,3 +175,4 @@ void UnlockObject(const T& t)
 }
 
 #endif // BITCOIN_SUPPORT_PAGELOCKER_H
+

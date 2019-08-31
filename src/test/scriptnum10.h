@@ -181,3 +181,4 @@ private:
 
 
 #endif // BITCOIN_TEST_BIGNUM_H
+

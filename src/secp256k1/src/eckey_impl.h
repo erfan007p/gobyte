@@ -97,3 +97,4 @@ static int secp256k1_eckey_pubkey_tweak_mul(const secp256k1_ecmult_context *ctx,
 }
 
 #endif
+

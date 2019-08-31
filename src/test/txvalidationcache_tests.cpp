@@ -84,3 +84,4 @@ BOOST_FIXTURE_TEST_CASE(tx_mempool_block_doublespend, TestChain100Setup)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

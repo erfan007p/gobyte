@@ -179,3 +179,4 @@ void CZMQNotificationInterface::NotifyTransactionLock(const CTransaction &tx)
         }
     }
 }
+

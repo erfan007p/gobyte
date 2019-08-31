@@ -313,3 +313,4 @@ static int secp256k1_fe_is_quad_var(const secp256k1_fe *a) {
 }
 
 #endif
+

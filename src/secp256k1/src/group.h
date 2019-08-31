@@ -142,3 +142,4 @@ static void secp256k1_ge_storage_cmov(secp256k1_ge_storage *r, const secp256k1_g
 static void secp256k1_gej_rescale(secp256k1_gej *r, const secp256k1_fe *b);
 
 #endif
+

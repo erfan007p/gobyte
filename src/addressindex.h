@@ -80,3 +80,4 @@ struct CMempoolAddressDeltaKeyCompare
 };
 
 #endif // BITCOIN_ADDRESSINDEX_H
+

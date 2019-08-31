@@ -125,3 +125,4 @@ fi
 echo -e "Verified hashes of \n$FILES"
 
 exit 0
+

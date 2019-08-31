@@ -71,3 +71,4 @@ int main(void) {
     secp256k1_context_destroy(data.ctx);
     return 0;
 }
+

@@ -20,3 +20,4 @@ l2 = set([ re.search(r'gobyte_(.*).qm', f).group(1) for f in glob.glob(os.path.j
 
 print ",".join(sorted(l1.intersection(l2)))
 
+

@@ -312,3 +312,4 @@ void sph_shavite512_addbits_and_close(
 #endif	
 	
 #endif
+

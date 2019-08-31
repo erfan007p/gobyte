@@ -157,3 +157,4 @@ The following RPC commands are supported:
   - prepare     - Manually prepare a finalized budget
   - submit      - Manually submit a finalized budget
 
+

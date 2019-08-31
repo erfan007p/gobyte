@@ -307,3 +307,4 @@ public:
 };
 
 #endif // BITCOIN_WALLET_DB_H
+

@@ -31,3 +31,4 @@ boost::filesystem::path GetTempPath() {
     return path;
 #endif
 }
+

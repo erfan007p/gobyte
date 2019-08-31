@@ -194,3 +194,4 @@ FastRandomContext::FastRandomContext(bool fDeterministic)
         Rw = tmp;
     }
 }
+

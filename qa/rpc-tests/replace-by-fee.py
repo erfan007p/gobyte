@@ -587,3 +587,4 @@ class ReplaceByFeeTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     ReplaceByFeeTest().main()
+

@@ -240,3 +240,4 @@ void PeerTableModel::sort(int column, Qt::SortOrder order)
     priv->sortOrder = order;
     refresh();
 }
+

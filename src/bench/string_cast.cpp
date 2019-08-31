@@ -116,3 +116,4 @@ BENCHMARK(strings_2_multi_lexical_cast);
 BENCHMARK(strings_2_multi_numberToString);
 BENCHMARK(strings_2_multi_to_string);
 BENCHMARK(strings_2_strptintf);
+

@@ -108,3 +108,4 @@ class KeyPoolTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     KeyPoolTest().main()
+

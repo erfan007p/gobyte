@@ -148,3 +148,4 @@ int64_t GetBlockProofEquivalentTime(const CBlockIndex& to, const CBlockIndex& fr
     }
     return sign * r.GetLow64();
 }
+

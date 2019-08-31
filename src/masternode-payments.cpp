@@ -1096,3 +1096,4 @@ void CMasternodePayments::UpdatedBlockTip(const CBlockIndex *pindex, CConnman& c
     CheckBlockVotes(nFutureBlock - 1);
     ProcessBlock(nFutureBlock, connman);
 }
+

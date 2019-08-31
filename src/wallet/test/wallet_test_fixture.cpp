@@ -30,3 +30,4 @@ WalletTestingSetup::~WalletTestingSetup()
     bitdb.Flush(true);
     bitdb.Reset();
 }
+

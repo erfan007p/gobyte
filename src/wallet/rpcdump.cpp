@@ -1303,3 +1303,4 @@ UniValue importmulti(const JSONRPCRequest& mainRequest)
 
     return response;
 }
+

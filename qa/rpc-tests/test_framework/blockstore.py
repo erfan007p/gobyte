@@ -162,3 +162,4 @@ class TxStore(object):
                 if tx is not None:
                     responses.append(msg_generic(b"tx", tx))
         return responses
+

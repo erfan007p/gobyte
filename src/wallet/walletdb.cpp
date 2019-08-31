@@ -1014,3 +1014,4 @@ unsigned int CWalletDB::GetUpdateCounter()
 {
     return nWalletDBUpdateCounter;
 }
+

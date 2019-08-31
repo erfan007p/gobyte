@@ -155,3 +155,4 @@ public:
 };
 
 #endif // BITCOIN_MERKLEBLOCK_H
+

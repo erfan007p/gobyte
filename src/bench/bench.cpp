@@ -100,3 +100,4 @@ bool benchmark::State::KeepRunning()
 
     return false;
 }
+

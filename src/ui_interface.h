@@ -132,3 +132,4 @@ std::string AmountErrMsg(const char* const optname, const std::string& strValue)
 extern CClientUIInterface uiInterface;
 
 #endif // BITCOIN_UI_INTERFACE_H
+

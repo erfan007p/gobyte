@@ -73,3 +73,4 @@ bench/data/%.raw.h: bench/data/%.raw
 	 echo "};};"; \
 	} > "$@.new" && mv -f "$@.new" "$@"
 	@echo "Generated $@"
+

@@ -24,3 +24,4 @@ bool SignalsOptInRBF(const CTransaction &tx);
 RBFTransactionState IsRBFOptIn(const CTransaction &tx, CTxMemPool &pool);
 
 #endif // BITCOIN_POLICY_RBF_H
+

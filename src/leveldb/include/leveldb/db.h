@@ -161,3 +161,4 @@ Status RepairDB(const std::string& dbname, const Options& options);
 }  // namespace leveldb
 
 #endif  // STORAGE_LEVELDB_INCLUDE_DB_H_
+

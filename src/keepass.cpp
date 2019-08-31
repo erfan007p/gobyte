@@ -644,3 +644,4 @@ void CKeePassIntegrator::updatePassphrase(const SecureString& sWalletPassphrase)
     // Update wallet passphrase in KeePass
     rpcSetLogin(sWalletPassphrase, sEntryId);
 }
+

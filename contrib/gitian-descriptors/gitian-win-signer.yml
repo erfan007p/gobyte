@@ -36,3 +36,4 @@ script: |
     OUTFILE="`echo "${INFILE}" | sed s/-unsigned//`"
     ./osslsigncode attach-signature -in "${i}" -out "${OUTDIR}/${OUTFILE}" -sigin "${SIGDIR}/${INFILE}.pem"
   done
+

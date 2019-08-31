@@ -281,3 +281,4 @@ extern const UniValue NullUniValue;
 const UniValue& find_value( const UniValue& obj, const std::string& name);
 
 #endif // __UNIVALUE_H__
+

@@ -173,3 +173,4 @@ void run_schnorr_tests(void) {
 }
 
 #endif
+

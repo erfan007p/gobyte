@@ -81,3 +81,4 @@ private:
 };
 
 #endif // BITCOIN_QT_PEERTABLEMODEL_H
+

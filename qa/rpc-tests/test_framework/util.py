@@ -745,3 +745,4 @@ def mine_large_block(node, utxos=None):
 def get_bip9_status(node, key):
     info = node.getblockchaininfo()
     return info['bip9_softforks'][key]
+

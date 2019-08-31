@@ -211,3 +211,4 @@ std::string CHDPubKey::GetKeyPath() const
 {
     return strprintf("m/44'/%d'/%d'/%d/%d", Params().ExtCoinType(), nAccountIndex, nChangeIndex, extPubKey.nChild);
 }
+

@@ -58,3 +58,4 @@ void noui_connect()
     uiInterface.ThreadSafeQuestion.connect(noui_ThreadSafeQuestion);
     uiInterface.InitMessage.connect(noui_InitMessage);
 }
+

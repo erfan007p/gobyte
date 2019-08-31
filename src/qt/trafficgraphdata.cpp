@@ -268,3 +268,4 @@ void TrafficGraphData::clear()
     nLastBytesIn = 0;
     nLastBytesOut = 0;
 }
+

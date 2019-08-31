@@ -81,3 +81,4 @@ BOOST_AUTO_TEST_CASE(invalid_proposals_test)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

@@ -18,3 +18,4 @@ strip docker/bin/gobyte-cli
 strip docker/bin/gobyte-tx
 
 docker build --pull -t $DOCKER_IMAGE:$DOCKER_TAG -f docker/Dockerfile docker
+

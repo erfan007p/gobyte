@@ -145,3 +145,4 @@ class TxnMallTest(BitcoinTestFramework):
 if __name__ == '__main__':
     TxnMallTest().main()
 
+

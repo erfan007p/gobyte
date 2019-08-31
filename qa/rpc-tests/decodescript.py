@@ -183,3 +183,4 @@ class DecodeScriptTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     DecodeScriptTest().main()
+

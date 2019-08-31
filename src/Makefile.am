@@ -605,3 +605,4 @@ endif
 if ENABLE_QT_TESTS
 include Makefile.qttest.include
 endif
+

@@ -11,3 +11,4 @@ endif
 if BUILD_BITCOIN_UTILS
   dist_man1_MANS+=gobyte-cli.1 gobyte-tx.1
 endif
+

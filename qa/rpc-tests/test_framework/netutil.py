@@ -153,3 +153,4 @@ def test_ipv6_local():
     except socket.error:
         have_ipv6 = False
     return have_ipv6
+

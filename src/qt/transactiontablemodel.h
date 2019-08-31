@@ -118,3 +118,4 @@ public Q_SLOTS:
 };
 
 #endif // BITCOIN_QT_TRANSACTIONTABLEMODEL_H
+

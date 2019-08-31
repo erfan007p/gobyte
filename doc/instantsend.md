@@ -78,3 +78,4 @@ There is also a field named `instantlock` (that is present in commands such as `
     * non-InstantSend transaction received one confirmation from blockchain:
         * confirmations: 1
         * instantlock: false
+

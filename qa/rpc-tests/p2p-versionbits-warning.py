@@ -163,3 +163,4 @@ class VersionBitsWarningTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     VersionBitsWarningTest().main()
+

@@ -227,3 +227,4 @@ void TrafficGraphDataTests::averageBandwidthEvery2EmptyTest()
         QCOMPARE(sample.out, rate);
     }
 }
+

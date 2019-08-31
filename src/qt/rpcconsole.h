@@ -175,3 +175,4 @@ private:
 };
 
 #endif // BITCOIN_QT_RPCCONSOLE_H
+

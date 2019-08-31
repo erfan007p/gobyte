@@ -76,3 +76,4 @@ bool AreInputsStandard(const CTransaction& tx, const CCoinsViewCache& mapInputs)
 extern CFeeRate incrementalRelayFee;
 extern CFeeRate dustRelayFee;
 #endif // BITCOIN_POLICY_POLICY_H
+

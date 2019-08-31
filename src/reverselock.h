@@ -32,3 +32,4 @@ private:
 };
 
 #endif // BITCOIN_REVERSELOCK_H
+

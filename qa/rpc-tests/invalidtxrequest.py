@@ -70,3 +70,4 @@ class InvalidTxRequestTest(ComparisonTestFramework):
 
 if __name__ == '__main__':
     InvalidTxRequestTest().main()
+

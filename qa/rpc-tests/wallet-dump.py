@@ -113,3 +113,4 @@ class WalletDumpTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     WalletDumpTest().main ()
+

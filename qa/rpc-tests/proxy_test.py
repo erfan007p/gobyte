@@ -201,3 +201,4 @@ class ProxyTest(BitcoinTestFramework):
 if __name__ == '__main__':
     ProxyTest().main()
 
+

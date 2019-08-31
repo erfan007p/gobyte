@@ -92,3 +92,4 @@ bool static inline IsSelectableSocket(SOCKET s) {
 }
 
 #endif // BITCOIN_COMPAT_H
+

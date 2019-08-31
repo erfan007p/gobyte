@@ -182,3 +182,4 @@ script: |
   done
   mkdir -p $OUTDIR/src
   mv $SOURCEDIST $OUTDIR/src
+

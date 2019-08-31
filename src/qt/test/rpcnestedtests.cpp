@@ -154,3 +154,4 @@ void RPCNestedTests::rpcNestedTests()
 
     boost::filesystem::remove_all(boost::filesystem::path(path));
 }
+

@@ -54,3 +54,4 @@ done
 mv ${TEMPDIR}/${ROOTDIR} ${OUTDIR}
 rm -rf ${TEMPDIR}
 echo "Signed: ${OUTDIR}"
+

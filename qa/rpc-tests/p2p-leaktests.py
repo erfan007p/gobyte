@@ -142,3 +142,4 @@ class P2PLeakTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     P2PLeakTest().main()
+

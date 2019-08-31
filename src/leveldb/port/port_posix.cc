@@ -51,3 +51,4 @@ void InitOnce(OnceType* once, void (*initializer)()) {
 
 }  // namespace port
 }  // namespace leveldb
+

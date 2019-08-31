@@ -57,3 +57,4 @@ static const int MAX_URI_LENGTH = 255;
 #define QAPP_APP_NAME_DEVNET "GoByte-Qt-%s"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H
+

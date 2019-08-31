@@ -32,3 +32,4 @@ List the version number/commit ID, and if it is an official binary, self compile
 
 ### Any extra information that might be useful in the debugging process.
 This is normally the contents of a `debug.log`, `db.log` or `config.log` file. Raw text or a link to a pastebin type site are preferred.
+

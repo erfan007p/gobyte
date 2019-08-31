@@ -39,3 +39,4 @@ class SignMessagesTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     SignMessagesTest().main()
+

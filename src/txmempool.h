@@ -778,3 +778,4 @@ struct TxCoinAgePriorityCompare
 };
 
 #endif // BITCOIN_TXMEMPOOL_H
+

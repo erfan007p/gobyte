@@ -16,3 +16,4 @@ The seeds compiled into the release are created from the current masternode list
 Ubuntu:
 
     sudo apt-get install python3-dnspython
+

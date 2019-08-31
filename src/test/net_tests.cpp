@@ -175,3 +175,4 @@ BOOST_AUTO_TEST_CASE(cnode_simple_test)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

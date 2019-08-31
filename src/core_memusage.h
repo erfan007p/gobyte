@@ -60,3 +60,4 @@ static inline size_t RecursiveDynamicUsage(const CBlockLocator& locator) {
 }
 
 #endif // BITCOIN_CORE_MEMUSAGE_H
+

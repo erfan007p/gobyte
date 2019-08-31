@@ -79,3 +79,4 @@ public:
 void ThreadCheckPrivateSendServer(CConnman& connman);
 
 #endif
+

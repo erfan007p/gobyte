@@ -1360,3 +1360,4 @@ void CGovernanceManager::CleanOrphanObjects()
         }
     }
 }
+

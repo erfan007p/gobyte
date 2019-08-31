@@ -160,3 +160,4 @@ void CMnemonic::ToSeed(SecureString mnemonic, SecureString passphrase, SecureVec
     //                    int keylen, unsigned char *out);
     PKCS5_PBKDF2_HMAC(mnemonic.c_str(), mnemonic.size(), &vchSalt[0], vchSalt.size(), 2048, EVP_sha512(), 64, &seedRet[0]);
 }
+

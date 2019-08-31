@@ -162,3 +162,4 @@ int secp256k1_schnorr_partial_combine(const secp256k1_context* ctx, unsigned cha
 }
 
 #endif
+

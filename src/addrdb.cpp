@@ -216,3 +216,4 @@ bool CAddrDB::Read(CAddrMan& addr, CDataStream& ssPeers)
 
     return true;
 }
+

@@ -333,3 +333,4 @@ int TransactionRecord::getOutputIndex() const
 {
     return idx;
 }
+

@@ -23,3 +23,4 @@ private:
 };
 
 #endif // BITCOIN_QT_TEST_RPC_NESTED_TESTS_H
+

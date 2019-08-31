@@ -595,3 +595,4 @@ public:
 };
 
 #endif // BITCOIN_ADDRMAN_H
+

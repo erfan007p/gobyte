@@ -49,3 +49,4 @@ public class Secp256k1Context {
 
   private static native long secp256k1_init_context();
 }
+

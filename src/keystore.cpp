@@ -119,3 +119,4 @@ bool CBasicKeyStore::GetHDChain(CHDChain& hdChainRet) const
     hdChainRet = hdChain;
     return !hdChain.IsNull();
 }
+

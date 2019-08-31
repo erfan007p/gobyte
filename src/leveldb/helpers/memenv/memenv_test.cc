@@ -239,3 +239,4 @@ TEST(MemEnvTest, DBTest) {
 int main(int argc, char** argv) {
   return leveldb::test::RunAllTests();
 }
+

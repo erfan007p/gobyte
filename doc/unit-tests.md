@@ -16,3 +16,4 @@ To run the gobyte-qt tests manually, launch `src/qt/test/test_gobyte-qt`
 
 To add more gobyte-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
+

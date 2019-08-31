@@ -318,3 +318,4 @@ void sph_echo512_addbits_and_close(
 #endif
 
 #endif
+

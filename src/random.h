@@ -55,3 +55,4 @@ public:
 };
 
 #endif // BITCOIN_RANDOM_H
+

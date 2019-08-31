@@ -209,3 +209,4 @@ void RecipientCatcher::getRecipient(SendCoinsRecipient r)
 {
     recipient = r;
 }
+

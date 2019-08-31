@@ -35,3 +35,4 @@ void perf_init(void);
 void perf_fini(void);
 
 #endif // H_PERF
+

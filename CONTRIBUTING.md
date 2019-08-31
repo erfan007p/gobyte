@@ -108,3 +108,4 @@ Release Policy
 --------------
 
 The project leader is the release manager for each GoByte Core release.
+

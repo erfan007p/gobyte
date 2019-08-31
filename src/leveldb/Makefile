@@ -412,3 +412,4 @@ $(SHARED_OUTDIR)/%.o: %.cc
 
 $(SHARED_OUTDIR)/%.o: %.c
 	$(CC) $(CFLAGS) $(PLATFORM_SHARED_CFLAGS) -c $< -o $@
+

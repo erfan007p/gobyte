@@ -585,3 +585,4 @@ QT_TRANSLATE_NOOP("gobyte-core", "ZeroMQ notification options:"),
 QT_TRANSLATE_NOOP("gobyte-core", "no mixing available."),
 QT_TRANSLATE_NOOP("gobyte-core", "see debug.log for details."),
 };
+

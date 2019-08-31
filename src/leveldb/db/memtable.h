@@ -86,3 +86,4 @@ class MemTable {
 }  // namespace leveldb
 
 #endif  // STORAGE_LEVELDB_DB_MEMTABLE_H_
+

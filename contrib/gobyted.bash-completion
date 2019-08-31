@@ -54,3 +54,4 @@ complete -F _gobyted gobyted gobyte-qt
 # indent-tabs-mode: nil
 # End:
 # ex: ts=4 sw=4 et filetype=sh
+

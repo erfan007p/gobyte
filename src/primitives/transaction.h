@@ -376,3 +376,4 @@ struct CompareOutputBIP69
 };
 
 #endif // BITCOIN_PRIMITIVES_TRANSACTION_H
+

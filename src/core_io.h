@@ -31,3 +31,4 @@ void ScriptPubKeyToUniv(const CScript& scriptPubKey, UniValue& out, bool fInclud
 void TxToUniv(const CTransaction& tx, const uint256& hashBlock, UniValue& entry);
 
 #endif // BITCOIN_CORE_IO_H
+

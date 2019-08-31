@@ -241,3 +241,4 @@ void CActiveMasternode::ManageStateRemote()
         LogPrintf("CActiveMasternode::ManageStateRemote -- %s: %s\n", GetStateString(), strNotCapableReason);
     }
 }
+

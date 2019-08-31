@@ -27,3 +27,4 @@ class CreateCache(BitcoinTestFramework):
 
 if __name__ == '__main__':
     CreateCache().main()
+

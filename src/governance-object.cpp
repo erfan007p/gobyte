@@ -790,3 +790,4 @@ void CGovernanceObject::CheckOrphanVotes(CConnman& connman)
         }
     }
 }
+

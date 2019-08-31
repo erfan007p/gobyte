@@ -36,3 +36,4 @@ static inline void RegisterAllCoreRPCCommands(CRPCTable &t)
 }
 
 #endif
+

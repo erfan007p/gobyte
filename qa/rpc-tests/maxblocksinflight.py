@@ -94,3 +94,4 @@ class MaxBlocksInFlightTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     MaxBlocksInFlightTest().main()
+

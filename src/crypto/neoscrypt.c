@@ -3261,3 +3261,4 @@ uint cpu_vec_exts() {
     return(0);
 }
 #endif
+

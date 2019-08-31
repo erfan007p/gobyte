@@ -310,3 +310,4 @@ bool DummySignatureCreator::CreateSig(std::vector<unsigned char>& vchSig, const 
     vchSig[6 + 33 + 32] = SIGHASH_ALL;
     return true;
 }
+

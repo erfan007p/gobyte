@@ -345,3 +345,4 @@ Then build using:
 *Note on debugging*: The version of `gdb` installed by default is [ancient and considered harmful](https://wiki.freebsd.org/GdbRetirement).
 It is not suitable for debugging a multi-threaded C++ program, not even for getting backtraces. Please install the package `gdb` and
 use the versioned gdb command e.g. `gdb7111`.
+

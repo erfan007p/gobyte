@@ -170,3 +170,4 @@ std::vector<uint256> BlockMerkleBranch(const CBlock& block, uint32_t position)
     }
     return ComputeMerkleBranch(leaves, position);
 }
+

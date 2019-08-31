@@ -152,3 +152,4 @@ complete -F _gobyte_cli gobyte-cli
 # indent-tabs-mode: nil
 # End:
 # ex: ts=4 sw=4 et filetype=sh
+

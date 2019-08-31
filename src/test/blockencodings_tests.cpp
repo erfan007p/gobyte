@@ -338,3 +338,4 @@ BOOST_AUTO_TEST_CASE(TransactionsRequestSerializationTest) {
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

@@ -1258,3 +1258,4 @@ void CTxLockCandidate::Relay(CConnman& connman) const
         ++itOutpointLock;
     }
 }
+

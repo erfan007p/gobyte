@@ -149,3 +149,4 @@ public:
 };
 
 #endif // GBX_HDCHAIN_H
+

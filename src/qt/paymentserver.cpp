@@ -813,3 +813,4 @@ X509_STORE* PaymentServer::getCertStore()
 {
     return certStore.get();
 }
+

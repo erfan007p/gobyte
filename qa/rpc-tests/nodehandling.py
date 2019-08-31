@@ -84,3 +84,4 @@ class NodeHandlingTest (BitcoinTestFramework):
 
 if __name__ == '__main__':
     NodeHandlingTest ().main ()
+

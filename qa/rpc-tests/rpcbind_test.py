@@ -101,3 +101,4 @@ class RPCBindTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     RPCBindTest().main()
+

@@ -177,3 +177,4 @@ public:
 
 
 #endif // BITCOIN_UINT256_H
+

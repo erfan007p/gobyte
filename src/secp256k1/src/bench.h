@@ -64,3 +64,4 @@ void run_benchmark(char *name, void (*benchmark)(void*), void (*setup)(void*), v
 }
 
 #endif
+

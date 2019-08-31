@@ -71,3 +71,4 @@ private:
 };
 
 #endif // BITCOIN_QT_SENDCOINSENTRY_H
+

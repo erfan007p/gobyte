@@ -64,3 +64,4 @@ std::string HelpMessage(HelpMessageMode mode);
 std::string LicenseInfo();
 
 #endif // BITCOIN_INIT_H
+

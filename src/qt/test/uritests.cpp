@@ -92,3 +92,4 @@ void URITests::uriTests()
     QVERIFY(GUIUtil::parseBitcoinURI(uri, &rv));
     QVERIFY(rv.fUseInstantSend != 1);
 }
+

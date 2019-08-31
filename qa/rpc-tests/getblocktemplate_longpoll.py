@@ -73,3 +73,4 @@ class GetBlockTemplateLPTest(BitcoinTestFramework):
 if __name__ == '__main__':
     GetBlockTemplateLPTest().main()
 
+

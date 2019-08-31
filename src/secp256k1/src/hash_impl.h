@@ -279,3 +279,4 @@ static void secp256k1_rfc6979_hmac_sha256_finalize(secp256k1_rfc6979_hmac_sha256
 #undef Ch
 
 #endif
+

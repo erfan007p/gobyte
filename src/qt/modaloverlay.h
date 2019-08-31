@@ -50,3 +50,4 @@ private:
 };
 
 #endif // BITCOIN_QT_MODALOVERLAY_H
+

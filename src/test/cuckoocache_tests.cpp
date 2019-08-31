@@ -392,3 +392,4 @@ BOOST_AUTO_TEST_CASE(cuckoocache_generations)
 }
 
 BOOST_AUTO_TEST_SUITE_END();
+

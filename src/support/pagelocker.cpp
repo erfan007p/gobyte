@@ -68,3 +68,4 @@ bool MemoryPageLocker::Unlock(const void* addr, size_t len)
 LockedPageManager::LockedPageManager() : LockedPageManagerBase<MemoryPageLocker>(GetSystemPageSize())
 {
 }
+

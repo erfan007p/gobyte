@@ -28,3 +28,4 @@ More benchmarks are needed for, in no particular order:
 - Coins database
 - Memory pool
 - Wallet coin selection
+

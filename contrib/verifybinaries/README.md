@@ -31,3 +31,4 @@ If you do not want to keep the downloaded binaries, specify anything as the seco
 ```sh
 ./verify.sh bitcoin-core-0.13.0 delete
 ```
+

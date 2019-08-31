@@ -349,3 +349,4 @@ class EnvWrapper : public Env {
 }  // namespace leveldb
 
 #endif  // STORAGE_LEVELDB_INCLUDE_ENV_H_
+

@@ -716,3 +716,4 @@ void InterruptSocks5(bool interrupt)
 {
     interruptSocks5Recv = interrupt;
 }
+

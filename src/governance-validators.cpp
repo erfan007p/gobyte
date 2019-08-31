@@ -328,3 +328,4 @@ bool CProposalValidator::CheckURL(const std::string& strURLIn)
 
     return true;
 }
+

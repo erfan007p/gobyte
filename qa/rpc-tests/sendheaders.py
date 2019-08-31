@@ -604,3 +604,4 @@ class SendHeadersTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     SendHeadersTest().main()
+

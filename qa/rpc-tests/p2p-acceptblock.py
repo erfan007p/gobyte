@@ -290,3 +290,4 @@ class AcceptBlockTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     AcceptBlockTest().main()
+

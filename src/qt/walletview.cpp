@@ -386,3 +386,4 @@ void WalletView::trxAmount(QString amount)
 {
     transactionSum->setText(amount);
 }
+

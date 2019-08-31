@@ -64,3 +64,4 @@ inline uint64_t bswap_64(uint64_t x)
 #endif // defined(__APPLE__)
 
 #endif // BITCOIN_COMPAT_BYTESWAP_H
+

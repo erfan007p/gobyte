@@ -27,3 +27,4 @@ std::string AmountErrMsg(const char* const optname, const std::string& strValue)
 {
     return strprintf(_("Invalid amount for -%s=<amount>: '%s'"), optname, strValue);
 }
+

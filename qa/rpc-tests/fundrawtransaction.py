@@ -770,3 +770,4 @@ class RawTransactionsTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     RawTransactionsTest().main()
+

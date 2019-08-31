@@ -687,3 +687,4 @@ void OverviewPage::DisablePrivateSendCompletely() {
     }
     privateSendClient.fEnablePrivateSend = false;
 }
+

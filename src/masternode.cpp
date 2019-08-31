@@ -969,3 +969,4 @@ void CMasternode::FlagGovernanceItemsAsDirty()
         mnodeman.AddDirtyGovernanceObjectHash(vecDirty[i]);
     }
 }
+

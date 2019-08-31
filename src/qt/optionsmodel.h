@@ -110,3 +110,4 @@ Q_SIGNALS:
 };
 
 #endif // BITCOIN_QT_OPTIONSMODEL_H
+

@@ -575,3 +575,4 @@ void OptionsModel::checkAndMigrate()
         settings.setValue(strSettingsVersionKey, CLIENT_VERSION);
     }
 }
+

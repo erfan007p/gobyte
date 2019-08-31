@@ -136,3 +136,4 @@ class SignRawTransactionsTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     SignRawTransactionsTest().main()
+

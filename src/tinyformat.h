@@ -1047,3 +1047,4 @@ std::string format(const std::string &fmt, const Args&... args)
 #define strprintf tinyformat::format
 
 #endif // TINYFORMAT_H_INCLUDED
+

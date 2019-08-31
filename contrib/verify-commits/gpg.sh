@@ -35,3 +35,4 @@ if $VALID && $REVSIG; then
 else
 	echo "$INPUT" | gpg --trust-model always "$@" 2>/dev/null
 fi
+

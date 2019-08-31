@@ -185,3 +185,4 @@ bool BanTableModel::shouldShow()
         return true;
     return false;
 }
+

@@ -61,3 +61,4 @@ typedef enum ScriptError_t
 const char* ScriptErrorString(const ScriptError error);
 
 #endif // BITCOIN_SCRIPT_SCRIPT_ERROR_H
+

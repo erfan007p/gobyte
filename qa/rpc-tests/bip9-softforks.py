@@ -245,3 +245,4 @@ class BIP9SoftForksTest(ComparisonTestFramework):
 
 if __name__ == '__main__':
     BIP9SoftForksTest().main()
+

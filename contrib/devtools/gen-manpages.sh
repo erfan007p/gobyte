@@ -27,3 +27,4 @@ for cmd in $BITCOIND $BITCOINCLI $BITCOINTX $BITCOINQT; do
 done
 
 rm -f footer.h2m
+

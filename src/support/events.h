@@ -54,3 +54,4 @@ raii_evhttp_connection obtain_evhttp_connection_base(struct event_base* base, st
 }
 
 #endif // BITCOIN_SUPPORT_EVENTS_H
+

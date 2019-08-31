@@ -294,3 +294,4 @@ void sph_luffa512_addbits_and_close(
 #endif
 	
 #endif
+

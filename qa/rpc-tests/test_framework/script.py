@@ -900,3 +900,4 @@ def SignatureHash(script, txTo, inIdx, hashtype):
     hash = hash256(s)
 
     return (hash, None)
+

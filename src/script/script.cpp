@@ -254,3 +254,4 @@ bool CScript::IsPushOnly() const
 {
     return this->IsPushOnly(begin());
 }
+

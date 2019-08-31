@@ -579,3 +579,4 @@ void DumpMempool();
 bool LoadMempool();
 
 #endif // BITCOIN_VALIDATION_H
+

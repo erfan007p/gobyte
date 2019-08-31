@@ -108,3 +108,4 @@ static void secp256k1_rand256_test(unsigned char *b32) {
 }
 
 #endif
+

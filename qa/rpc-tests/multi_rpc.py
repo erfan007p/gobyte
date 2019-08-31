@@ -118,3 +118,4 @@ class HTTPBasicsTest (BitcoinTestFramework):
 
 if __name__ == '__main__':
     HTTPBasicsTest ().main ()
+

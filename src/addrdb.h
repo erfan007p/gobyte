@@ -100,3 +100,4 @@ public:
 };
 
 #endif // BITCOIN_ADDRDB_H
+

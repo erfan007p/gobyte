@@ -404,3 +404,4 @@ static void secp256k1_ecmult(const secp256k1_ecmult_context *ctx, secp256k1_gej 
 }
 
 #endif
+

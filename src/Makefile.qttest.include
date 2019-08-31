@@ -67,3 +67,4 @@ test_gobyte_qt_check : qt/test/test_gobyte-qt$(EXEEXT) FORCE
 
 test_gobyte_qt_clean: FORCE
 	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_gobyte_qt_OBJECTS)
+

@@ -92,3 +92,4 @@ class WalletAccountsTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     WalletAccountsTest().main ()
+

@@ -171,3 +171,4 @@ class CService : public CNetAddr
 };
 
 #endif // BITCOIN_NETADDRESS_H
+

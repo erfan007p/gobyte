@@ -35,3 +35,4 @@ blocks and transactions to fewer nodes.
 Reducing the maximum connected nodes to a minimum could be desirable if traffic
 limits are tiny. Keep in mind that gobyte's trustless model works best if you are
 connected to a handful of nodes.
+

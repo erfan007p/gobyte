@@ -1098,3 +1098,4 @@ void ClickableProgressBar::mouseReleaseEvent(QMouseEvent *event)
 }
 
 } // namespace GUIUtil
+

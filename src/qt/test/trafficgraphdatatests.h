@@ -21,3 +21,4 @@ private Q_SLOTS:
 
 
 #endif // TRAFFICGRAPHDATATESTS_H
+

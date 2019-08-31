@@ -12,3 +12,4 @@
 void memory_cleanse(void *ptr, size_t len);
 
 #endif // BITCOIN_SUPPORT_CLEANSE_H
+

@@ -22,3 +22,4 @@ FORMS += \
 
 RESOURCES += \
     ../src/qt/gobyte.qrc
+

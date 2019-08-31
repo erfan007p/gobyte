@@ -44,3 +44,4 @@ AC_DEFUN([CHECK_ATOMIC], [
 
   AC_LANG_POP
 ])
+

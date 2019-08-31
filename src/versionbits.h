@@ -70,3 +70,4 @@ int VersionBitsStateSinceHeight(const CBlockIndex* pindexPrev, const Consensus::
 uint32_t VersionBitsMask(const Consensus::Params& params, Consensus::DeploymentPos pos);
 
 #endif
+

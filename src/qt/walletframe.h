@@ -91,3 +91,4 @@ public Q_SLOTS:
 };
 
 #endif // BITCOIN_QT_WALLETFRAME_H
+

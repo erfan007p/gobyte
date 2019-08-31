@@ -350,3 +350,4 @@ Masternode Payment Sync
 | 4 | nMnCount | int | | (DEPRECATED)
 
 *NOTE: There are no fields in this mesasge starting from protocol 70209*
+

@@ -117,3 +117,4 @@ class SpentIndexTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     SpentIndexTest().main()
+

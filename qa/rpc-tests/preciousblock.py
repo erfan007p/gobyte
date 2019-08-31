@@ -117,3 +117,4 @@ class PreciousTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     PreciousTest().main()
+

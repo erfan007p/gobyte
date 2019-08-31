@@ -110,3 +110,4 @@ void ThreadSendAlert(CConnman& connman)
     }
     printf("ThreadSendAlert() : Alert sent to %d nodes\n", nSent);
 }
+

@@ -131,3 +131,4 @@ Command output should have "_Masternode successfully started_" in its `status` f
 Search your Masternodes on https://gobyteninja.pl/masternodes.html
 
 _Hint: Bookmark it, you definitely will be using this site a lot._
+

@@ -131,3 +131,4 @@ size_t CScheduler::getQueueInfo(boost::chrono::system_clock::time_point &first,
     }
     return result;
 }
+

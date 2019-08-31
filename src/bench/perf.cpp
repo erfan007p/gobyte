@@ -51,3 +51,4 @@ void perf_fini(void) { }
 uint64_t perf_cpucycles(void) { return 0; }
 
 #endif
+

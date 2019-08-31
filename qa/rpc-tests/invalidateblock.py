@@ -74,3 +74,4 @@ class InvalidateTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     InvalidateTest().main()
+

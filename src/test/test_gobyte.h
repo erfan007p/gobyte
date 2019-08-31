@@ -86,3 +86,4 @@ struct TestMemPoolEntryHelper
     TestMemPoolEntryHelper &SigOps(unsigned int _sigops) { sigOpCount = _sigops; return *this; }
 };
 #endif
+

@@ -228,3 +228,4 @@ public:
 };
 
 #endif // BITCOIN_WALLET_CRYPTER_H
+

@@ -52,3 +52,4 @@ static void DeserializeAndCheckBlockTest(benchmark::State& state)
 
 BENCHMARK(DeserializeBlockTest);
 BENCHMARK(DeserializeAndCheckBlockTest);
+

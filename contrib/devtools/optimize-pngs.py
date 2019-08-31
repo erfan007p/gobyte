@@ -76,3 +76,4 @@ for fileDict in outputArray:
     print fileDict['file']+"\n  size diff from: "+str(fileDict['osize'])+" to: "+str(fileDict['psize'])+"\n  old sha256: "+oldHash+"\n  new sha256: "+newHash+"\n"
     
 print "completed. Checksum stable: "+str(noHashChange)+". Total reduction: "+str(totalSaveBytes)+" bytes"
+

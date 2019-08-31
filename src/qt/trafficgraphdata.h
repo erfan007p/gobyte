@@ -89,3 +89,4 @@ private:
 };
 
 #endif // TRAFFICGRAPHDATA_H
+

@@ -29,3 +29,4 @@ static int secp256k1_ecmult_context_is_built(const secp256k1_ecmult_context *ctx
 static void secp256k1_ecmult(const secp256k1_ecmult_context *ctx, secp256k1_gej *r, const secp256k1_gej *a, const secp256k1_scalar *na, const secp256k1_scalar *ng);
 
 #endif
+

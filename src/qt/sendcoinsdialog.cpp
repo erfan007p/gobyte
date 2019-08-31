@@ -1021,3 +1021,4 @@ void SendConfirmationDialog::updateYesButton()
         yesButton->setText(tr("Yes"));
     }
 }
+

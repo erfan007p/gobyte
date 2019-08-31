@@ -291,3 +291,4 @@ void sph_keccak512_addbits_and_close(
 #endif
 
 #endif
+

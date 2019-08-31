@@ -139,3 +139,4 @@ private:
 
 
 #endif // BITCOIN_BLOOM_H
+

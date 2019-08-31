@@ -32,3 +32,4 @@ static void Trig(benchmark::State& state)
 }
 
 BENCHMARK(Trig);
+

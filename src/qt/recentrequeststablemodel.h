@@ -105,3 +105,4 @@ private:
 };
 
 #endif // BITCOIN_QT_RECENTREQUESTSTABLEMODEL_H
+

@@ -71,3 +71,4 @@ class TxIndexTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     TxIndexTest().main()
+

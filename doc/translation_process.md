@@ -108,3 +108,4 @@ To create a new language template, you will need to edit the languages manifest 
 
 ### Questions and general assistance
 Check official forum at [https://www.gobyte.org/forum/topic/gobyte-worldwide-collaboration.88/](https://www.gobyte.org/forum/topic/gobyte-worldwide-collaboration.88/).
+

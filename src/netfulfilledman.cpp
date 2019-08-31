@@ -74,3 +74,4 @@ std::string CNetFulfilledRequestManager::ToString() const
     info << "Nodes with fulfilled requests: " << (int)mapFulfilledRequests.size();
     return info.str();
 }
+

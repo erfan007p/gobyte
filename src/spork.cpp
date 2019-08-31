@@ -315,3 +315,4 @@ void CSporkMessage::Relay(CConnman& connman)
     CInv inv(MSG_SPORK, GetHash());
     connman.RelayInv(inv);
 }
+

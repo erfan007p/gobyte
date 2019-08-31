@@ -123,3 +123,4 @@ Launch Daemon with a dedicated gobytecore user.
 
 Auto respawning is currently only configured for Upstart and systemd.
 Reasonable defaults have been chosen but YMMV.
+

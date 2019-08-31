@@ -46,3 +46,4 @@ class DisableWalletTest (BitcoinTestFramework):
 
 if __name__ == '__main__':
     DisableWalletTest ().main ()
+

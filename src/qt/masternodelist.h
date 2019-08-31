@@ -78,3 +78,4 @@ private Q_SLOTS:
     void on_UpdateButton_clicked();
 };
 #endif // MASTERNODELIST_H
+

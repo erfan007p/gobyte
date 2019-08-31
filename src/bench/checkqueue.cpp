@@ -101,3 +101,4 @@ static void CCheckQueueSpeedPrevectorJob(benchmark::State& state)
 }
 BENCHMARK(CCheckQueueSpeed);
 BENCHMARK(CCheckQueueSpeedPrevectorJob);
+

@@ -62,3 +62,4 @@ def siphash256(k0, k1, h):
     v0, v1, v2, v3 = siphash_round(v0, v1, v2, v3)
     v0, v1, v2, v3 = siphash_round(v0, v1, v2, v3)
     return v0 ^ v1 ^ v2 ^ v3
+

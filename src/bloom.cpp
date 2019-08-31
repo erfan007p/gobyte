@@ -311,3 +311,4 @@ void CRollingBloomFilter::reset()
         *it = 0;
     }
 }
+

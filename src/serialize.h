@@ -997,3 +997,4 @@ size_t GetSerializeSize(const S& s, const T& t)
 }
 
 #endif // BITCOIN_SERIALIZE_H
+

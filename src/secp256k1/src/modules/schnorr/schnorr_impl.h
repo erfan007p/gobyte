@@ -205,3 +205,4 @@ static int secp256k1_schnorr_sig_combine(unsigned char *sig64, size_t n, const u
 }
 
 #endif
+

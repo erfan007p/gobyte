@@ -89,3 +89,4 @@ bool CMasternodeConfig::read(std::string& strErrRet) {
     streamConfig.close();
     return true;
 }
+

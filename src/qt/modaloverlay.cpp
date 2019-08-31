@@ -181,3 +181,4 @@ void ModalOverlay::hideForever()
 {
     foreverHidden = true;
 }
+

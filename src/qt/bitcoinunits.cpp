@@ -269,3 +269,4 @@ CAmount BitcoinUnits::maxMoney()
 {
     return MAX_MONEY;
 }
+

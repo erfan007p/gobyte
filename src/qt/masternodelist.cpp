@@ -515,3 +515,4 @@ void MasternodeList::ShowQRCode(std::string strAlias) {
     dialog->setInfo(strWindowtitle, QString::fromStdString(strMNPrivKey), strHTML, strQRCodeTitle);
     dialog->show();
 }
+

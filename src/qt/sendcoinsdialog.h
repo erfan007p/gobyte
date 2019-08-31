@@ -124,3 +124,4 @@ private:
 };
 
 #endif // BITCOIN_QT_SENDCOINSDIALOG_H
+

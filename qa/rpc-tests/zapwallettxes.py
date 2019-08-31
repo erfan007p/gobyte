@@ -75,3 +75,4 @@ class ZapWalletTXesTest (BitcoinTestFramework):
 
 if __name__ == '__main__':
     ZapWalletTXesTest ().main ()
+

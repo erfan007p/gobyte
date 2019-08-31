@@ -621,3 +621,4 @@ void StopREST()
     for (unsigned int i = 0; i < ARRAYLEN(uri_prefixes); i++)
         UnregisterHTTPHandler(uri_prefixes[i].prefix, false);
 }
+

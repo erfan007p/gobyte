@@ -21,3 +21,4 @@ process can take anywhere from a few hours to a day or more.
 See the gobyte wiki at:
   https://gobytecoin.atlassian.net/wiki/
 for more help and information.
+

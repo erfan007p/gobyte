@@ -232,3 +232,4 @@ void ShutdownWindow::closeEvent(QCloseEvent *event)
 {
     event->ignore();
 }
+

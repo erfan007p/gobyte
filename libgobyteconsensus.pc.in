@@ -9,3 +9,4 @@ Version: @PACKAGE_VERSION@
 Libs: -L${libdir} -lgobyteconsensus
 Cflags: -I${includedir}
 Requires.private: libcrypto
+

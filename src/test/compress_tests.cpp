@@ -63,3 +63,4 @@ BOOST_AUTO_TEST_CASE(compress_amounts)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

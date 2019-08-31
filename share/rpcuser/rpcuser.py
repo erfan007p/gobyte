@@ -39,3 +39,4 @@ result = m.hexdigest()
 print("String to be appended to bitcoin.conf:")
 print("rpcauth="+username+":"+salt+"$"+result)
 print("Your password:\n"+password)
+

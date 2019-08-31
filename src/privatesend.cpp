@@ -566,3 +566,4 @@ void ThreadCheckPrivateSend(CConnman& connman)
         }
     }
 }
+

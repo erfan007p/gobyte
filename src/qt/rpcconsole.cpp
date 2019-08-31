@@ -1287,3 +1287,4 @@ void RPCConsole::setTabFocus(enum TabTypes tabType)
 {
     ui->tabWidget->setCurrentIndex(tabType);
 }
+

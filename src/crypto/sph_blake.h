@@ -325,3 +325,4 @@ void sph_blake512_addbits_and_close(
 #endif
 
 #endif
+

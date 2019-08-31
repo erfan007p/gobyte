@@ -50,3 +50,4 @@ class NamedArgumentTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     NamedArgumentTest().main()
+

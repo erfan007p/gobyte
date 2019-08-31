@@ -30,3 +30,4 @@ uint256 BlockMerkleRoot(const CBlock& block, bool* mutated = NULL);
 std::vector<uint256> BlockMerkleBranch(const CBlock& block, uint32_t position);
 
 #endif
+

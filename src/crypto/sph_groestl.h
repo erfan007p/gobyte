@@ -327,3 +327,4 @@ void sph_groestl512_addbits_and_close(
 #endif
 
 #endif
+

@@ -49,3 +49,4 @@ private:
 };
 
 #endif // BITCOIN_QT_PAYMENTREQUESTPLUS_H
+

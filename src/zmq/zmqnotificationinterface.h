@@ -36,3 +36,4 @@ private:
 };
 
 #endif // BITCOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+

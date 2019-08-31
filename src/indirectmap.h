@@ -54,3 +54,4 @@ public:
 };
 
 #endif // BITCOIN_INDIRECTMAP_H
+

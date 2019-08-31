@@ -28,3 +28,4 @@ private:
 };
 
 #endif // BITCOIN_DSNOTIFICATIONINTERFACE_H
+

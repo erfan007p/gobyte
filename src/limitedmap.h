@@ -98,3 +98,4 @@ public:
 };
 
 #endif // BITCOIN_LIMITEDMAP_H
+

@@ -548,3 +548,4 @@ void RPCRunLater(const std::string& name, boost::function<void(void)> func, int6
 }
 
 CRPCTable tableRPC;
+

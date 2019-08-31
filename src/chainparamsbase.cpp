@@ -146,3 +146,4 @@ bool AreBaseParamsConfigured()
 {
     return pCurrentBaseParams != NULL;
 }
+

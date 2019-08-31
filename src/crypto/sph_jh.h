@@ -296,3 +296,4 @@ void sph_jh512_addbits_and_close(
 #endif
 
 #endif
+

@@ -492,3 +492,4 @@ void CMasternodeSync::UpdatedBlockTip(const CBlockIndex *pindexNew, bool fInitia
         SwitchToNextAsset(connman);
     }
 }
+

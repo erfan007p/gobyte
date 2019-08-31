@@ -29,3 +29,4 @@ SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ecdh(
 # endif
 
 #endif
+

@@ -263,3 +263,4 @@ private:
     unsigned int untrackedTxs;
 };
 #endif /*BITCOIN_POLICYESTIMATOR_H */
+

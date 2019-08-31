@@ -149,3 +149,4 @@ private:
 void ThreadFlushWalletDB();
 
 #endif // BITCOIN_WALLET_WALLETDB_H
+

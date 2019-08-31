@@ -1764,3 +1764,4 @@ void CMasternodeMan::NotifyMasternodeUpdates(CConnman& connman)
     fMasternodesAdded = false;
     fMasternodesRemoved = false;
 }
+

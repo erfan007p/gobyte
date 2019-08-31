@@ -290,3 +290,4 @@ void sph_cubehash512_addbits_and_close(
 #endif
 
 #endif
+

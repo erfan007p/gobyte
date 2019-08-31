@@ -31,3 +31,4 @@ enum {
 };
 
 #endif // BITCOIN_CONSENSUS_CONSENSUS_H
+

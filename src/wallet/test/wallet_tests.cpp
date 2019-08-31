@@ -489,3 +489,4 @@ BOOST_FIXTURE_TEST_CASE(importwallet_rescan, TestChain100Setup)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

@@ -337,3 +337,4 @@ BOOST_AUTO_TEST_CASE(rpc_sentinel_ping)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

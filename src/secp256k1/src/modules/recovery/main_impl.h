@@ -191,3 +191,4 @@ int secp256k1_ecdsa_recover(const secp256k1_context* ctx, secp256k1_pubkey *pubk
 }
 
 #endif
+

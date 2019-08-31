@@ -21,3 +21,4 @@ void CompatTests::bswapTests()
 	QVERIFY(bswap_32(u2) == e2);
 	QVERIFY(bswap_64(u3) == e3);
 }
+

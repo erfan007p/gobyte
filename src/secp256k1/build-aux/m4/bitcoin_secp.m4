@@ -67,3 +67,4 @@ if test x"$has_gmp" != x"yes"; then
   LIBS="$LIBS_TEMP"
 fi
 ])
+

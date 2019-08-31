@@ -414,3 +414,4 @@ class TestManager(object):
         self.wait_for_disconnections()
         self.block_store.close()
         self.tx_store.close()
+

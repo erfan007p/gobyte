@@ -332,3 +332,4 @@ class AddressIndexTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     AddressIndexTest().main()
+

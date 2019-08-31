@@ -650,3 +650,4 @@ void TransactionView::updateWatchOnlyColumn(bool fHaveWatchOnly)
     watchOnlyWidget->setVisible(true);
     transactionView->setColumnHidden(TransactionTableModel::Watchonly, !fHaveWatchOnly);
 }
+

@@ -13,3 +13,4 @@
 static void secp256k1_ecmult_const(secp256k1_gej *r, const secp256k1_ge *a, const secp256k1_scalar *q);
 
 #endif
+

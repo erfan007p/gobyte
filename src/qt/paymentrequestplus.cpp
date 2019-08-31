@@ -218,3 +218,4 @@ QList<std::pair<CScript,CAmount> > PaymentRequestPlus::getPayTo() const
     }
     return result;
 }
+

@@ -288,3 +288,4 @@ BOOST_AUTO_TEST_CASE(netbase_getgroup)
 }
 
 BOOST_AUTO_TEST_SUITE_END()
+

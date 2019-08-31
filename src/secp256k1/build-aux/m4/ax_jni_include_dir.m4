@@ -138,3 +138,4 @@ while ls -ld "$_cur" 2>/dev/null | grep " -> " >/dev/null; do
 done
 _ACJNI_FOLLOWED="$_cur"
 ])# _ACJNI
+

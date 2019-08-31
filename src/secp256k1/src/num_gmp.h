@@ -18,3 +18,4 @@ typedef struct {
 } secp256k1_num;
 
 #endif
+

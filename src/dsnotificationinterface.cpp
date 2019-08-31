@@ -62,3 +62,4 @@ void CDSNotificationInterface::SyncTransaction(const CTransaction &tx, const CBl
     instantsend.SyncTransaction(tx, pindex, posInBlock);
     CPrivateSend::SyncTransaction(tx, pindex, posInBlock);
 }
+

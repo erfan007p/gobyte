@@ -323,3 +323,4 @@ if __name__ == '__main__':
 		print("Genesis block not found in hashlist")
 	else:
 		BlockDataCopier(settings, blkindex, blkmap).run()
+

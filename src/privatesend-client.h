@@ -196,3 +196,4 @@ public:
 void ThreadCheckPrivateSendClient(CConnman& connman);
 
 #endif
+

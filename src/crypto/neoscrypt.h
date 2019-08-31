@@ -70,3 +70,4 @@ typedef uchar hash_digest[DIGEST_SIZE];
     U32TO8_BE((p) + 4, (uint)((v)      ));
 
 #endif
+

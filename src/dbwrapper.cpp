@@ -216,3 +216,4 @@ const std::vector<unsigned char>& GetObfuscateKey(const CDBWrapper &w)
 }
 
 };
+

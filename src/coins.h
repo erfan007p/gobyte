@@ -309,3 +309,4 @@ void AddCoins(CCoinsViewCache& cache, const CTransaction& tx, int nHeight);
 const Coin& AccessByTxid(const CCoinsViewCache& cache, const uint256& txid);
 
 #endif // BITCOIN_COINS_H
+

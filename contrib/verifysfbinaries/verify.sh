@@ -119,3 +119,4 @@ clean_up $FILES $SIGNATUREFILENAME $TMPFILE
 echo -e "Verified hashes of \n$FILES"
 
 exit 0
+

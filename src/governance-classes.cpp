@@ -831,3 +831,4 @@ std::string CSuperblockManager::GetRequiredPaymentsString(int nBlockHeight)
 
     return ret;
 }
+

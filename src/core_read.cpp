@@ -151,3 +151,4 @@ std::vector<unsigned char> ParseHexUV(const UniValue& v, const std::string& strN
         throw std::runtime_error(strName + " must be hexadecimal string (not '" + strHex + "')");
     return ParseHex(strHex);
 }
+

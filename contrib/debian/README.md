@@ -19,3 +19,4 @@ and the `../../share/pixmaps/gobyte128.png` to `/usr/share/pixmaps`
 
 gobyte-qt.protocol (KDE)
 
+

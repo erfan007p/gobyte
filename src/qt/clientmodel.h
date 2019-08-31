@@ -128,3 +128,4 @@ public Q_SLOTS:
 };
 
 #endif // BITCOIN_QT_CLIENTMODEL_H
+

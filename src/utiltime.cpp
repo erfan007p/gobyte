@@ -101,3 +101,4 @@ std::string DurationToDHMS(int64_t nDurationTime)
         return strprintf("%02dh:%02dm:%02ds", hours, minutes, seconds);
     return strprintf("%02dm:%02ds", minutes, seconds);
 }
+

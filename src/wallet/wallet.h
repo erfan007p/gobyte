@@ -1179,3 +1179,4 @@ public:
 };
 
 #endif // BITCOIN_WALLET_WALLET_H
+

@@ -110,3 +110,4 @@ script: |
   mkdir -p $OUTDIR/src
   mv $SOURCEDIST $OUTDIR/src
   mv ${OUTDIR}/${DISTNAME}-arm-*.tar.gz ${OUTDIR}/${DISTNAME}-RPi2.tar.gz
+

@@ -291,3 +291,4 @@ std::string SafeIntVersionToString(uint32_t nVersion);
 
 
 #endif // BITCOIN_UTIL_H
+

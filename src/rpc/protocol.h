@@ -92,3 +92,4 @@ bool GetAuthCookie(std::string *cookie_out);
 void DeleteAuthCookie();
 
 #endif // BITCOIN_RPCPROTOCOL_H
+

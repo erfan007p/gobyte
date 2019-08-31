@@ -73,3 +73,4 @@ EXPORT_SYMBOL unsigned int gobyteconsensus_version();
 #undef EXPORT_SYMBOL
 
 #endif // BITCOIN_BITCOINCONSENSUS_H
+

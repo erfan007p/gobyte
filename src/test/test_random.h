@@ -21,3 +21,4 @@ static inline uint32_t insecure_rand(void)
 }
 
 #endif
+

@@ -65,3 +65,4 @@ BOOST_AUTO_TEST_CASE(streams_serializedata_xor)
 }         
 
 BOOST_AUTO_TEST_SUITE_END()
+

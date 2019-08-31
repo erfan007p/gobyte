@@ -70,3 +70,4 @@ diff -dur a/mac_alias/alias.py b/mac_alias/alias.py
                                      *self.target.cnid_path)
              b.write(struct.pack(b'>hh', TAG_CNID_PATH,
                                   len(cnid_path)))
+

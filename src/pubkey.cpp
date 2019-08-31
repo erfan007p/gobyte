@@ -301,3 +301,4 @@ ECCVerifyHandle::~ECCVerifyHandle()
         secp256k1_context_verify = NULL;
     }
 }
+

@@ -115,3 +115,4 @@ class InvalidBlockRequestTest(ComparisonTestFramework):
 
 if __name__ == '__main__':
     InvalidBlockRequestTest().main()
+

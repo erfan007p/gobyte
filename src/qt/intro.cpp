@@ -317,3 +317,4 @@ QString Intro::getPathToCheck()
     mutex.unlock();
     return retval;
 }
+

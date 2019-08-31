@@ -486,3 +486,4 @@ void CBlockPolicyEstimator::Read(CAutoFile& filein, int nFileVersion)
     }
 }
 
+

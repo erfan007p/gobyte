@@ -110,3 +110,4 @@ class WalletHDTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     WalletHDTest().main ()
+

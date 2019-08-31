@@ -67,3 +67,4 @@ bool ProcessMessages(CNode* pfrom, CConnman& connman, const std::atomic<bool>& i
 bool SendMessages(CNode* pto, CConnman& connman, const std::atomic<bool>& interrupt);
 
 #endif // BITCOIN_NET_PROCESSING_H
+

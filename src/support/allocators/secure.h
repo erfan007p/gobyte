@@ -59,3 +59,4 @@ typedef std::basic_string<char, std::char_traits<char>, secure_allocator<char> >
 typedef std::vector<unsigned char, secure_allocator<unsigned char> > SecureVector;
 
 #endif // BITCOIN_SUPPORT_ALLOCATORS_SECURE_H
+

@@ -104,3 +104,4 @@ def write_all_rpc_commands(dirname, node):
         f.writelines(list(commands))
 
     return True
+

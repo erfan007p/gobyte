@@ -80,3 +80,4 @@ BOOST_AUTO_TEST_CASE(test_combiner_all)
     BOOST_CHECK(Test());
 }
 BOOST_AUTO_TEST_SUITE_END()
+

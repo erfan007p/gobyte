@@ -87,3 +87,4 @@ void CGovernanceObjectVoteFile::RebuildIndex()
         }
     }
 }
+

@@ -142,3 +142,4 @@ public:
 };
 
 #endif // BITCOIN_TXDB_H
+

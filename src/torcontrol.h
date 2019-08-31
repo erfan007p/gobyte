@@ -18,3 +18,4 @@ void InterruptTorControl();
 void StopTorControl();
 
 #endif /* BITCOIN_TORCONTROL_H */
+

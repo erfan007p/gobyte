@@ -4,3 +4,4 @@ clean:
 	$(MAKE) -C .. gobyte_test_clean
 check:
 	$(MAKE) -C .. gobyte_test_check
+

@@ -349,3 +349,4 @@ Older releases
 GoByte Core tree 0.12.1 was a fork of Dash Core tree 0.12.1.x
 
 - [v0.12.0](release-notes/gobyte/release-notes-0.12.0.md) released Nov/17/2017
+

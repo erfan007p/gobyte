@@ -65,3 +65,4 @@ CScript CombineSignatures(const CScript& scriptPubKey, const BaseSignatureChecke
 CScript CombineSignatures(const CScript& scriptPubKey, const CTransaction& txTo, unsigned int nIn, const CScript& scriptSig1, const CScript& scriptSig2);
 
 #endif // BITCOIN_SCRIPT_SIGN_H
+

@@ -184,3 +184,4 @@ def try_rpc(func, *args, **kwargs):
 
 if __name__ == "__main__":
     ImportRescanTest().main()
+

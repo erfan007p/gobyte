@@ -1313,3 +1313,4 @@ bool VerifyScript(const CScript& scriptSig, const CScript& scriptPubKey, unsigne
 
     return set_success(serror);
 }
+

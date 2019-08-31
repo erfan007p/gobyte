@@ -93,3 +93,4 @@ isminetype IsMine(const CKeyStore &keystore, const CScript& scriptPubKey)
     }
     return ISMINE_NO;
 }
+

@@ -44,3 +44,4 @@ for folder in FOLDERS:
             print n,"Last git edit", git_date, "-", file_path
             os.popen(CMD_REGEX % (year,file_path))
             n = n + 1
+

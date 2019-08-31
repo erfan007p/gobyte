@@ -22,3 +22,4 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&);
 
 #endif // BITCOIN_POW_H
+

@@ -307,3 +307,4 @@ void sph_simd512_addbits_and_close(
 #endif
 
 #endif
+

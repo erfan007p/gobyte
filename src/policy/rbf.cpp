@@ -45,3 +45,4 @@ RBFTransactionState IsRBFOptIn(const CTransaction &tx, CTxMemPool &pool)
     }
     return RBF_TRANSACTIONSTATE_FINAL;
 }
+

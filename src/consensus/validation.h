@@ -83,3 +83,4 @@ public:
 };
 
 #endif // BITCOIN_CONSENSUS_VALIDATION_H
+

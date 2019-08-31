@@ -52,3 +52,4 @@ void OpenURIDialog::on_selectFileButton_clicked()
     QUrl fileUri = QUrl::fromLocalFile(filename);
     ui->uriEdit->setText("gobyte:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }
+

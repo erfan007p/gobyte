@@ -211,3 +211,4 @@ bool CZMQPublishRawTransactionLockNotifier::NotifyTransactionLock(const CTransac
     ss << transaction;
     return SendMessage(MSG_RAWTXLOCK, &(*ss.begin()), ss.size());
 }
+

@@ -99,3 +99,4 @@ def vch2mpi(s):
 def vch2bn(s):
     return mpi2bn(vch2mpi(s))
 
+
