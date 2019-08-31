@@ -112,4 +112,3 @@ SECP256K1_INLINE static int secp256k1_scalar_eq(const secp256k1_scalar *a, const
 }
 
 #endif
-

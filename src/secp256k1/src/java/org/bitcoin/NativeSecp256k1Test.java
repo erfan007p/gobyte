@@ -224,4 +224,3 @@ public class NativeSecp256k1Test {
 
     }
 }
-

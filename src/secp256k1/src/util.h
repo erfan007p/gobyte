@@ -108,4 +108,3 @@ SECP256K1_GNUC_EXT typedef unsigned __int128 uint128_t;
 #endif
 
 #endif
-

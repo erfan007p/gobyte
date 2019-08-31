@@ -444,4 +444,3 @@ public class NativeSecp256k1 {
     private static native byte[][] secp256k1_ecdh(ByteBuffer byteBuff, long context, int inputLen);
 
 }
-

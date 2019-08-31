@@ -947,4 +947,3 @@ SECP256K1_INLINE static void secp256k1_scalar_mul_shift_var(secp256k1_scalar *r,
 }
 
 #endif
-

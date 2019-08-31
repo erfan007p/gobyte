@@ -89,4 +89,3 @@ int ecdsa_signature_parse_der_lax(
 #endif
 
 #endif
-

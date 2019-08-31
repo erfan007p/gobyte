@@ -41,4 +41,3 @@ static void secp256k1_ecmult_gen(const secp256k1_ecmult_gen_context* ctx, secp25
 static void secp256k1_ecmult_gen_blind(secp256k1_ecmult_gen_context *ctx, const unsigned char *seed32);
 
 #endif
-

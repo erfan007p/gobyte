@@ -111,4 +111,3 @@ int ec_privkey_export_der(const secp256k1_context *ctx, unsigned char *privkey, 
     }
     return 1;
 }
-

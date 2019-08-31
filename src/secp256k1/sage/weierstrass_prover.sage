@@ -262,4 +262,3 @@ def check_symbolic_jacobian_weierstrass(name, A, B, branches, formula):
         print "    branch %i: %s" % (x[1], x[0])
 
   print
-

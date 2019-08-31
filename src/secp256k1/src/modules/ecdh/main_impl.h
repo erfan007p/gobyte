@@ -52,4 +52,3 @@ int secp256k1_ecdh(const secp256k1_context* ctx, unsigned char *result, const se
 }
 
 #endif
-

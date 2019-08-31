@@ -30,4 +30,3 @@
 
 #endif // USE_BASIC_CONFIG
 #endif // _SECP256K1_BASIC_CONFIG_
-

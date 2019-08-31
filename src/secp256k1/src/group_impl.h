@@ -704,4 +704,3 @@ static int secp256k1_gej_has_quad_y_var(const secp256k1_gej *a) {
 }
 
 #endif
-

@@ -73,4 +73,3 @@ void run_ecdh_tests(void) {
 }
 
 #endif
-

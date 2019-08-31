@@ -52,4 +52,3 @@ int main(void) {
     run_benchmark("ecdh", bench_ecdh, bench_ecdh_setup, NULL, &data, 10, 20000);
     return 0;
 }
-
