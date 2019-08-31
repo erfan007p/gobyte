@@ -355,4 +355,3 @@ const UniValue& UniValue::get_array() const
     return *this;
 }
 
-

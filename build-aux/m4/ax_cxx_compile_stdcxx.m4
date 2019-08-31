@@ -566,4 +566,3 @@ namespace cxx14
 #endif  // __cplusplus >= 201402L
 
 ]])
-

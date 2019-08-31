@@ -439,4 +439,3 @@ bool UniValue::read(const char *raw)
     return true;
 }
 
-

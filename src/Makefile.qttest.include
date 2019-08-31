@@ -65,6 +65,5 @@ test_gobyte_qt : qt/test/test_gobyte-qt$(EXEEXT)
 test_gobyte_qt_check : qt/test/test_gobyte-qt$(EXEEXT) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-test_gobyte_qt_clean: FORCE
-	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_gobyte_qt_OBJECTS)
-
+test_dash_qt_clean: FORCE
+	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_dash_qt_OBJECTS)

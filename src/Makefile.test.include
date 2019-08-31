@@ -208,4 +208,3 @@ test/data/%.raw.h: test/data/%.raw
 	 echo "};};"; \
 	} > "$@.new" && mv -f "$@.new" "$@"
 	@echo "Generated $@"
-

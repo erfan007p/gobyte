@@ -260,4 +260,3 @@ static const char *escapes[256] = {
 	NULL,
 };
 #endif // BITCOIN_UNIVALUE_UNIVALUE_ESCAPES_H
-
