@@ -1,4 +1,4 @@
-Building Dash
+Building GoByte
 =============
 
 See doc/build-*.md for instructions on building the various

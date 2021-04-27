@@ -19,7 +19,7 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md). TODO: Give example PR for Dash
+* Update hardcoded [seeds](/contrib/seeds/README.md). TODO: Give example PR for GoByte
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate.
 * Update version of `contrib/gitian-descriptors/*.yml`: usually one'd want to do this on master after branching off the release - but be sure to at least do it before a new major release
@@ -263,9 +263,9 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Announce the release:
 
-  - Release on Dash forum: https://www.gobyte.network/forum/topic/official-announcements.54/
+  - Release on GoByte forum: https://www.gobyte.network/forum/topic/official-announcements.54/
 
-  - Optionally Discord, twitter, reddit /r/Dashpay, ... but this will usually sort out itself
+  - Optionally Discord, twitter, reddit /r/GoBytepay, ... but this will usually sort out itself
 
   - Notify flare so that he can start building [the PPAs](https://launchpad.net/~gobyte.network/+archive/ubuntu/gobyte)
 

@@ -8,7 +8,7 @@
 # /etc/gobyte/gobyte.conf
 
 [Unit]
-Description=Dash daemon
+Description=GoByte daemon
 After=network.target
 
 [Service]

@@ -1,11 +1,11 @@
 GoByte Core
 ==========
 
-This is the official reference wallet for Dash digital currency and comprises the backbone of the Dash peer-to-peer network. You can [download GoByte Core](https://www.gobyte.network/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for GoByte digital currency and comprises the backbone of the GoByte peer-to-peer network. You can [download GoByte Core](https://www.gobyte.network/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Dash on your native platform.
+The following are some helpful notes on how to run GoByte on your native platform.
 
 ### Unix
 
@@ -24,12 +24,12 @@ Drag GoByte-Qt to your applications folder, and then run GoByte-Qt.
 
 ### Need Help?
 
-* See the [Dash documentation](https://docs.gobyte.network)
+* See the [GoByte documentation](https://docs.gobyte.network)
 for help and more information.
-* See the [Dash Developer Documentation](https://gobyte-docs.github.io/) 
+* See the [GoByte Developer Documentation](https://gobyte-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [Dash Nation Discord](http://gobytechat.org)
-* Ask for help on the [Dash Forum](https://gobyte.org/forum)
+* Ask for help on [GoByte Nation Discord](http://gobytechat.org)
+* Ask for help on the [GoByte Forum](https://gobyte.org/forum)
 
 Building
 ---------------------
@@ -59,8 +59,8 @@ The GoByte Core repo's [root README](/README.md) contains relevant information o
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Dash Forum](https://gobyte.org/forum), in the Development & Technical Discussion board.
-* Discuss on [Dash Nation Discord](http://gobytechat.org)
+* Discuss on the [GoByte Forum](https://gobyte.org/forum), in the Development & Technical Discussion board.
+* Discuss on [GoByte Nation Discord](http://gobytechat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
