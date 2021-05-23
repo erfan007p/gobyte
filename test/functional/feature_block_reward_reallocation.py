@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2015-2020 The Dash Core developers
+# Copyright (c) 2017-2021 The GoByte Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 from test_framework.blocktools import create_block, create_coinbase, get_masternode_payment
@@ -17,8 +18,8 @@ Checks block reward reallocation correctness
 
 class BlockRewardReallocationTest(DashTestFramework):
     def set_test_params(self):
-        self.set_dash_test_params(4, 3, fast_dip3_enforcement=True)
-        self.set_dash_dip8_activation(450)
+        self.set_gobyte_test_params(4, 3, fast_dip3_enforcement=True)
+        self.set_gobyte_dip8_activation(450)
 
     # 536870912 == 0x20000000, i.e. not signalling for anything
     def create_test_block(self, version=536870912):

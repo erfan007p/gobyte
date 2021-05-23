@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2015-2020 The Dash Core developers
+# Copyright (c) 2017-2021 The GoByte Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 import time
@@ -48,8 +49,8 @@ class TestNode(P2PInterface):
 
 class LLMQ_IS_CL_Conflicts(DashTestFramework):
     def set_test_params(self):
-        self.set_dash_test_params(4, 3, fast_dip3_enforcement=True)
-        self.set_dash_dip8_activation(10)
+        self.set_gobyte_test_params(4, 3, fast_dip3_enforcement=True)
+        self.set_gobyte_dip8_activation(10)
         #disable_mocktime()
 
     def run_test(self):

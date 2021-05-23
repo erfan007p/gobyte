@@ -1,7 +1,7 @@
 Expectations for DNS Seed operators
 ====================================
 
-Dash Core attempts to minimize the level of trust in DNS seeds,
+GoByte Core attempts to minimize the level of trust in DNS seeds,
 but DNS seeds still pose a small amount of risk for the network.
 As such, DNS seeds must be run by entities which have some minimum
 level of trust within the Dash community.
@@ -50,4 +50,4 @@ situations but should be discussed in public in advance.
 
 See also
 ----------
-- [dash-seeder](https://github.com/nightlydash/dash-seeder) is a reference implementation of a DNS seed.
+- [gobyte-seeder](https://github.com/nightlygobyte/gobyte-seeder) is a reference implementation of a DNS seed.
