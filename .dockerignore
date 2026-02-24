@@ -1,0 +1,26 @@
+# Version Control
+.git
+.gitignore
+.gitattributes
+
+# Build Artifacts
+*.o
+*.a
+*.la
+*.lo
+*.Plo
+.deps
+.libs
+
+# GoByte Specific
+depends/work
+depends/sources
+depends/built
+depends/sdk-sources
+
+# Docker/Temp files
+Dockerfile
+.dockerignore
+docker-compose.yml
+*.swp
+*.bak

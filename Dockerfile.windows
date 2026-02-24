@@ -1,0 +1,64 @@
+# --- Stage 1: The Windows Build Factory ---
+FROM ubuntu:20.04 AS builder
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 1. Install Build Essentials & Intel Windows Cross-Compilers
+# Note: g++-mingw-w64-aarch64 is removed from the apt list as it's not in standard repos
+RUN apt-get update && apt-get install -y \
+    build-essential libtool autotools-dev automake pkg-config \
+    bsdmainutils curl git python3 cmake nsis \
+    g++-mingw-w64-x86-64 \
+    fontconfig libfontconfig1-dev
+
+# 2. Fix MinGW to use POSIX threads (Required for C++11 and BLS)
+RUN update-alternatives --set x86_64-w64-mingw32-gcc /usr/bin/x86_64-w64-mingw32-gcc-posix && \
+    update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
+# Future ARM Support:
+# RUN update-alternatives --set aarch64-w64-mingw32-gcc /usr/bin/aarch64-w64-mingw32-gcc-posix && \
+#     update-alternatives --set aarch64-w64-mingw32-g++ /usr/bin/aarch64-w64-mingw32-g++-posix
+
+# 3. Build Chia BLS
+# x86_64 Build
+WORKDIR /bls-x64
+RUN git clone https://github.com/codablock/bls-signatures.git . && \
+    git checkout v20181101 && git submodule update --init --recursive && \
+    mkdir build && cd build && \
+    cmake .. -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ && \
+    make -j$(nproc) && make install
+
+# Future ARM64 Build:
+# WORKDIR /bls-arm64
+# RUN git clone https://github.com/codablock/bls-signatures.git . && \
+#     git checkout v20181101 && git submodule update --init --recursive && \
+#     mkdir build && cd build && \
+#     cmake .. -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=aarch64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=aarch64-w64-mingw32-g++ && \
+#     make -j$(nproc) && make install
+
+WORKDIR /src
+COPY . .
+
+# 4. Build Windows amd64 (x86_64)
+RUN cd depends && make HOST=x86_64-w64-mingw32 -j$(nproc)
+RUN ./autogen.sh && \
+    CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ && \
+    make -j$(nproc) && \
+    mv src/qt/gobyte-qt.exe /gobyte-qt-win64.exe && \
+    mv src/gobyted.exe /gobyted-win64.exe
+
+# 5. Future Build Windows ARM64 (aarch64)
+# RUN make clean || true
+# RUN cd depends && make HOST=aarch64-w64-mingw32 -j$(nproc)
+# RUN ./autogen.sh && \
+#     CONFIG_SITE=$PWD/depends/aarch64-w64-mingw32/share/config.site ./configure --prefix=/ && \
+#     make -j$(nproc) && \
+#     mv src/qt/gobyte-qt.exe /gobyte-qt-arm64.exe && \
+#     mv src/gobyted.exe /gobyted-arm64.exe
+
+# --- Stage 2: Extraction ---
+FROM scratch
+COPY --from=builder /gobyte-qt-win64.exe /
+COPY --from=builder /gobyted-win64.exe /
+# Future ARM Extraction:
+# COPY --from=builder /gobyte-qt-arm64.exe /
+# COPY --from=builder /gobyted-arm64.exe /
