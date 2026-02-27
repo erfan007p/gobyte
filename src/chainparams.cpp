@@ -380,10 +380,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nFalloffCoeff = 5; // this corresponds to 10 periods
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000008878de305e64726"); // 858200
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000008942a66521190e7"); // 1544447
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000000094dccfc3fff8a24cec653ca0f297736199ce569b4b17a9e9fd72cc1a"); // 858200
+        consensus.defaultAssumeValid = uint256S("0x0000000ecc646c693c0f9fe15ab0d89471264e40d152ddd6ac6a5d024bc6ea68"); // 1544447
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -494,14 +494,15 @@ public:
                 {772700, uint256S("0x0000000008941cc91fc012831c9db33b757b95db2c49ebb15e6777a2b2af508d")},
                 {800000, uint256S("0x00000000bfae74de004393d77f6f9ed116465984465b0e9a761987d1e5182cfe")},
                 {858200, uint256S("0x0000000094dccfc3fff8a24cec653ca0f297736199ce569b4b17a9e9fd72cc1a")},
+                {1544447, uint256S("0x0000000ecc646c693c0f9fe15ab0d89471264e40d152ddd6ac6a5d024bc6ea68")},
             }
         };
 
         chainTxData = ChainTxData{
-            1646958892, // * UNIX timestamp of last known number of transactions (Block 858200)
-            1409153,   // * total number of transactions between genesis and that timestamp
+            1772227491, // * UNIX timestamp of last known number of transactions (Block 858200)
+            2516620,   // * total number of transactions between genesis and that timestamp
                        //   (the tx=... number in the SetBestChain debug.log lines)
-            0.01    // * estimated number of transactions per second after that timestamp
+            0.009    // * estimated number of transactions per second after that timestamp
         };
     }
 };
@@ -591,10 +592,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nFalloffCoeff = 5; // this corresponds to 10 periods
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000148ae6172d"); // 80500 getblockheader
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000214506e2cf"); // 132630 getblockheader
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x000008f3916001ce53e31c7b55bddad4cfdc6dc2ca878fc15ab503e79b73626b"); // 80500 getblockhash
+        consensus.defaultAssumeValid = uint256S("0x000000c1edc3fb8754038cc4c3cdca4631de9c201cce50652487d9c17f706a4c"); // 132630 getblockhash
 
         pchMessageStart[0] = 0xd1;
         pchMessageStart[1] = 0x2b;
@@ -661,12 +662,13 @@ public:
                 {1299, uint256S("0x00000591a751dab5204cfb18fcba053a8307159f4d0bad035c0a11e1bcb65749")},
                 {2349, uint256S("0x00000091281586ffa24362e2adce9af51b9a899e9e09f88d389c33ef14855c45")},
                 {80500, uint256S("0x000008f3916001ce53e31c7b55bddad4cfdc6dc2ca878fc15ab503e79b73626b")},
+                {132630, uint256S("0x000000c1edc3fb8754038cc4c3cdca4631de9c201cce50652487d9c17f706a4c")},
             }
         };
 
         chainTxData = ChainTxData{
-            1637424520, // * UNIX timestamp of last known number of transactions (Block 1364)
-            98944,    // * total number of transactions between genesis and that timestamp
+            1772227596, // * UNIX timestamp of last known number of transactions (Block 132630)
+            175332,    // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.001      // * estimated number of transactions per second after that timestamp
         };
