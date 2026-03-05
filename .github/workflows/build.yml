@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        build_target:
+          - arm-linux
+          - win32
+          - win64
+          - linux32
+          - linux64
+          - linux64_nowallet
+          - linux64_release
+          - mac
+    env:
+      BUILD_TARGET: ${{ matrix.build_target }}
+      JOB_NUMBER: ${{ strategy.job-index }}
+      PULL_REQUEST: ${{ github.event_name == 'pull_request' && 'true' || 'false' }}
+      COMMIT_RANGE: ${{ github.event_name == 'pull_request' && format('{0}...{1}', github.event.pull_request.base.sha, github.event.pull_request.head.sha) || github.sha }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Cache dependencies and ccache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/cache/docker
+            ${{ github.workspace }}/cache/ccache
+            ${{ github.workspace }}/cache/depends
+            ${{ github.workspace }}/cache/sdk-sources
+          # Use a better key that includes the build target
+          key: ${{ runner.os }}-${{ matrix.build_target }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.build_target }}-
+
+      - name: Set up Environment
+        run: |
+          echo "HOST_SRC_DIR=${{ github.workspace }}" >> $GITHUB_ENV
+          echo "HOST_CACHE_DIR=${{ github.workspace }}/cache" >> $GITHUB_ENV
+
+          # Create the actual directories using absolute paths
+          mkdir -p ${{ github.workspace }}/cache/docker \
+                   ${{ github.workspace }}/cache/ccache \
+                   ${{ github.workspace }}/cache/depends \
+                   ${{ github.workspace }}/cache/sdk-sources
+
+      - name: Build Builder Image
+        run: |
+          source ./ci/matrix.sh
+          # Ensure BUILDER_IMAGE_NAME is defined in matrix.sh or GITHUB_ENV
+          docker build -t $BUILDER_IMAGE_NAME --build-arg=USER_ID=$(id -u) --build-arg=GROUP_ID=$(id -g) --build-arg=BUILD_TARGET=$BUILD_TARGET -f ci/Dockerfile.builder ci
+
+      - name: Build Depends
+        run: |
+          source ./ci/matrix.sh
+          $DOCKER_RUN_IN_BUILDER ./ci/build_depends.sh
+
+      - name: Build Source
+        run: |
+          source ./ci/matrix.sh
+          $DOCKER_RUN_IN_BUILDER ./ci/build_src.sh
+
+      - name: Run Unit Tests
+        if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
+        run: |
+          source ./ci/matrix.sh
+          $DOCKER_RUN_IN_BUILDER ./ci/test_unittests.sh
+
+      - name: Run Integration Tests
+        if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
+        run: |
+          source ./ci/matrix.sh
+          $DOCKER_RUN_IN_BUILDER ./ci/test_integrationtests.sh --quiet --jobs=3
