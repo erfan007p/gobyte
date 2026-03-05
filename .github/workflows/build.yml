@@ -29,6 +29,7 @@ jobs:
           - win64
           - linux32
           - linux64
+          - linux64_gui
           - linux64_nowallet
           - linux64_release
           - mac
@@ -103,6 +104,7 @@ jobs:
             ${{ github.workspace }}/build-ci/GoByte-Core.dmg
             ${{ github.workspace }}/build-ci/src/gobyted
             ${{ github.workspace }}/build-ci/src/gobyte-qt
+            ${{ github.workspace }}/build-ci/src/qt/gobyte-qt
             ${{ github.workspace }}/build-ci/src/gobyte-cli
             ${{ github.workspace }}/build-ci/src/test/test_gobyte
             ${{ github.workspace }}/build-ci/src/*.exe
