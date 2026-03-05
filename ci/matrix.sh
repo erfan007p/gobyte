@@ -65,7 +65,7 @@ elif [ "$BUILD_TARGET" = "linux64" ]; then
   export PYZMQ=true
   export RUN_UNITTESTS=true
   export RUN_INTEGRATIONTESTS=true
-elif [ "$BUILD_TARGET" = "linux64-gui" ]; then
+elif [ "$BUILD_TARGET" = "linux64_gui" ]; then
   export HOST=x86_64-unknown-linux-gnu
   export DEP_OPTS="NO_UPNP=1 DEBUG=1 QT=1"
   export BITCOIN_CONFIG="--enable-gui --enable-zmq --enable-glibc-back-compat --enable-reduce-exports --enable-stacktraces"
