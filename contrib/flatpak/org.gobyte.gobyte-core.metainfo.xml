@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gobyte.gobyte-core</id>
+  <name>GoByte Core</name>
+  <project_license>MIT</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <summary>Fully validating GoByte peer-to-peer network node, wallet and GUI</summary>
+  <url type="homepage">https://gobyte.network/</url>
+  <url type="bugtracker">https://github.com/gobytecoin/gobyte/issues/new?title=[flatpak]</url>
+  <url type="contribute">https://github.com/gobytecoin/gobyte/tree/develop</url>
+  <launchable type="desktop-id">org.gobyte.gobyte-core.desktop</launchable>
+  <description>
+    <p>
+    GoByte Core connects to the GoByte peer-to-peer network to download and
+    fully validate blocks and transactions. It also includes a wallet and
+    graphical user interface.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://docs.gobyte.network/en/stable/_images/overview.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://docs.gobyte.network/en/stable/_images/syncing.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="16.2.1" date="2026-03-05" type="release">
+        <description>
+        <p>This is our first stable release. Please report any bugs on the projects GitHub</p>
+        </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1">
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
+  <developer id="org.gobyte">
+    <name>GoByte Core Group</name>
+  </developer>
+</component>

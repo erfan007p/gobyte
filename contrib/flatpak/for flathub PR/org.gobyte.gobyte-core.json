@@ -1,0 +1,88 @@
+{
+    "id": "org.gobyte.gobyte-core",
+    "runtime": "org.freedesktop.Platform",
+    "sdk": "org.freedesktop.Sdk",
+    "runtime-version": "24.08",
+    "command": "gobyte-entrypoint.sh",
+    "finish-args": [
+        "--socket=x11",
+        "--socket=pulseaudio",
+        "--device=dri",
+        "--share=ipc",
+        "--share=network",
+        "--filesystem=~/.gobytecore:create",
+        "--filesystem=/run/tor/control.authcookie:ro"
+    ],
+    "modules": [
+        {
+            "name": "gobyte-core",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -m 0744 -D -t /app/bin/internal bin/gobyted",
+                "install -m 0744 -D -t /app/bin/internal bin/gobyte-qt",
+                "install -m 0744 -D -t /app/bin/internal bin/gobyte-cli",
+                "install -m 0744 -D -t /app/bin/internal bin/gobyte-tx",
+                "install -m 0744 -D -t /app/bin/internal bin/gobyte-wallet",
+                "install -m 0744 -D -t /app/bin/internal bin/test_gobyte"
+            ],
+            "post-install": [
+                "/app/bin/internal/test_gobyte"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://github.com/gobytecoin/gobyte/releases/download/v0.16.2.1/gobytecore-0.16.2-x86_64-linux-gnu.tar.gz",
+                    "sha256": "acb1cf006a5a575598a6ee64c7a50ef342bb1c8d9f92c76cc6387eb6e0cc0f1a"
+                },
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://github.com/gobytecoin/gobyte/releases/download/v0.16.2.1/gobytecore-0.16.2-aarch64-linux-gnu.tar.gz",
+                    "sha256": "4735be7e362058a2ef2a80e7cc3511766b8f40133a6af6f185974ddee6e5e66b"
+                }
+            ]
+        },
+        {
+            "name": "misc",
+            "buildsystem": "simple",
+            "build-commands": [
+                "desktop-file-edit --set-key=\"Icon\" --set-value=${FLATPAK_ID} gobyte-qt.desktop",
+                "install -Dp -m 644 gobyte-qt.desktop /app/share/applications/${FLATPAK_ID}.desktop",
+                "install -Dp -m 644 gobyte-hicolor-scalable.svg /app/share/icons/hicolor/scalable/apps/org.gobyte.gobyte-core.svg",
+                "install -Dp -m 644 org.gobyte.gobyte-core.metainfo.xml /app/share/metainfo/org.gobyte.gobyte-core.metainfo.xml",
+                "install -m 0744 -D gobyte-entrypoint.sh /app/bin/gobyte-entrypoint.sh",
+                "bash install_wrappers.sh"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://raw.githubusercontent.com/gobytecoin/gobyte/refs/tags/v0.16.2.1/contrib/debian/gobyte-qt.desktop",
+                    "sha256": "9461ffcb7b7fe28d6f4078131edf4874833c107ce3f0d299a261c6d545fc0cbb"
+                },
+                {
+                    "type": "file",
+                    "url": "https://raw.githubusercontent.com/dashpay/dash/v0.16.2.2/contrib/flatpak/org.gobyte.gobyte-core.metainfo.xml", //TODO: Update this URL to point to the correct file in the gobyte repository once it has been added
+                    "sha256": "eaac50bd3d2b11c6e3cb63f4c9b066ea230b57f724f35e1c5f6a7522a1671c10" //TODO: Update this hash to match the correct file once it has been added to the gobyte repository
+                },
+                {
+                    "type": "file",
+                    "path": "gobyte-entrypoint.sh"
+                },
+                {
+                    "type": "file",
+                    "url": "https://raw.githubusercontent.com/gobytecoin/gobyte/refs/tags/v0.16.2.1/share/pixmaps/gobyte-hicolor-scalable.svg",
+                    "sha256": "32ad1be7619761d8d864d11e2a115eb6aa7952d020556c610b16787df8d9fd33"
+                },
+                {
+                    "type": "file",
+                    "path": "install_wrappers.sh"
+                }
+            ]
+        }
+    ]
+}
