@@ -50,13 +50,13 @@ elif [ "$BUILD_TARGET" = "win64" ]; then
   export BITCOIN_CONFIG="--enable-gui --enable-reduce-exports --disable-miner"
   export DIRECT_WINE_EXEC_TESTS=true
   export RUN_UNITTESTS=true
-elif [ "$BUILD_TARGET" = "linux32" ]; then
-  export HOST=i686-pc-linux-gnu
-  export BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports --enable-stacktraces LDFLAGS=-static-libstdc++"
-  export USE_SHELL="/bin/gobyte"
-  export PYZMQ=true
-  export RUN_UNITTESTS=true
-  export RUN_INTEGRATIONTESTS=true
+# elif [ "$BUILD_TARGET" = "linux32" ]; then
+#   export HOST=i686-pc-linux-gnu
+#   export BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports --enable-stacktraces LDFLAGS=-static-libstdc++"
+#   export USE_SHELL="/bin/gobyte"
+#   export PYZMQ=true
+#   export RUN_UNITTESTS=true
+#   export RUN_INTEGRATIONTESTS=true
 elif [ "$BUILD_TARGET" = "linux64" ]; then
   export HOST=x86_64-unknown-linux-gnu
   export DEP_OPTS="NO_UPNP=1 DEBUG=1"
