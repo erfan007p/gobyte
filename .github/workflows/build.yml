@@ -89,6 +89,10 @@ jobs:
         with:
           name: gobyte-binaries-${{ matrix.build_target }}
           path: |
-            ${{ github.workspace }}/out/bin/gobyte*
-            ${{ github.workspace }}/out/bin/test_gobyte*
-          if-no-files-found: error
+            ${{ github.workspace }}/build-ci/GoByte-Core.dmg
+            ${{ github.workspace }}/build-ci/src/gobyted
+            ${{ github.workspace }}/build-ci/src/gobyte-qt
+            ${{ github.workspace }}/build-ci/src/gobyte-cli
+            ${{ github.workspace }}/build-ci/src/test/test_gobyte
+            ${{ github.workspace }}/build-ci/src/*.exe
+          if-no-files-found: warn
