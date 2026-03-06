@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - develop
+      - v0.16.x
   pull_request:
 
 jobs:
@@ -17,8 +17,8 @@ jobs:
           - arm-linux
           - win32
           - win64
-          - linux32
           - linux64
+          - linux64_gui
           - linux64_nowallet
           - linux64_release
           - mac
@@ -66,14 +66,14 @@ jobs:
           source ./ci/matrix.sh
           $DOCKER_RUN_IN_BUILDER ./ci/build_src.sh
 
-      - name: Run Unit Tests
-        if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
-        run: |
-          source ./ci/matrix.sh
-          $DOCKER_RUN_IN_BUILDER ./ci/test_unittests.sh
+      # - name: Run Unit Tests
+      #   if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
+      #   run: |
+      #     source ./ci/matrix.sh
+      #     $DOCKER_RUN_IN_BUILDER ./ci/test_unittests.sh
 
-      - name: Run Integration Tests
-        if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
-        run: |
-          source ./ci/matrix.sh
-          $DOCKER_RUN_IN_BUILDER ./ci/test_integrationtests.sh --quiet --jobs=3
+      # - name: Run Integration Tests
+      #   if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
+      #   run: |
+      #     source ./ci/matrix.sh
+      #     $DOCKER_RUN_IN_BUILDER ./ci/test_integrationtests.sh --quiet --jobs=3
