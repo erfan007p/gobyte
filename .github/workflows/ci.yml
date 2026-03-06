@@ -2,10 +2,10 @@ name: CI
 
 on:
   push:
-    branches: [master, v0.16.x]
+    branches:
+      - master
+      - v0.16.x
   pull_request:
-    branches: [master, v0.16.x]
-  workflow_dispatch:
 
 concurrency:
   group: |
@@ -61,19 +61,10 @@ jobs:
           # Ensure cache directories exist
           mkdir -p $HOME/cache/docker $HOME/cache/ccache $HOME/cache/depends $HOME/cache/sdk-sources
 
-      - name: Set up QEMU for cross‑arch builds
-        uses: docker/setup-qemu-action@v2
-        with:
-          platforms: linux/amd64,linux/arm64
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-        with:
-          install: true
       - name: Build Builder Image
         run: |
           source ./ci/matrix.sh
-          docker buildx build --platform linux/amd64,linux/arm64 -t $BUILDER_IMAGE_NAME --build-arg=USER_ID=$UID --build-arg=GROUP_ID=$UID --build-arg=BUILD_TARGET=$BUILD_TARGET -f ci/Dockerfile.builder ci --load
+          docker build -t $BUILDER_IMAGE_NAME --build-arg=USER_ID=$UID --build-arg=GROUP_ID=$UID --build-arg=BUILD_TARGET=$BUILD_TARGET -f ci/Dockerfile.builder ci
 
       - name: Build Depends
         run: |
