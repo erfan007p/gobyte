@@ -48,7 +48,6 @@ jobs:
       - name: Set up Environment
         run: |
           echo "HOST_SRC_DIR=$GITHUB_WORKSPACE" >> $GITHUB_ENV
-          echo "HOST_CACHE_DIR=~/cache" >> $GITHUB_ENV
           mkdir -p ~/cache/docker ~/cache/ccache ~/cache/depends ~/cache/sdk-sources
 
       - name: Build Builder Image
