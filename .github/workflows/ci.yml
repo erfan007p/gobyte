@@ -76,3 +76,16 @@ jobs:
       #   run: |
       #     source ./ci/matrix.sh
       #     $DOCKER_RUN_IN_BUILDER ./ci/test_integrationtests.sh --quiet --jobs=3
+
+      - name: Upload Binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: gobyte-binaries-${{ matrix.build_target }}
+          path: |
+            build-ci/src/gobyted*
+            build-ci/src/gobyte-cli*
+            build-ci/src/qt/gobyte-qt*
+            build-ci/src/*.exe
+            build-ci/src/qt/*.exe
+            build-ci/*.dmg
+          if-no-files-found: warn
