@@ -11,8 +11,8 @@ if [ "$RUN_UNITTESTS" != "true" ]; then
   exit 0
 fi
 
-# TODO this is not Travis agnostic
-export BOOST_TEST_RANDOM=1$TRAVIS_BUILD_ID
+# Generate random seed for test reproducibility
+export BOOST_TEST_RANDOM=${BOOST_TEST_RANDOM:-1$(date +%s)}
 export LD_LIBRARY_PATH=$BUILD_DIR/depends/$HOST/lib
 
 export WINEDEBUG=fixme-all
