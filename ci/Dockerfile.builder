@@ -2,15 +2,27 @@ FROM ubuntu:bionic
 
 # Build and base stuff
 # (zlib1g-dev and libssl-dev are needed for the Qt host binary builds, but should not be used by target binaries)
-# We split this up into multiple RUN lines as we might need to retry multiple times on Travis. This way we allow better
-# cache usage.
+# We split this up into multiple RUN lines for better Docker layer caching
 ENV APT_ARGS="-y --no-install-recommends --no-upgrade"
-RUN apt-get update && apt-get install $APT_ARGS git wget unzip && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install $APT_ARGS g++ && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install $APT_ARGS autotools-dev libtool m4 automake autoconf pkg-config && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install $APT_ARGS zlib1g-dev libssl1.0-dev curl ccache bsdmainutils cmake && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install $APT_ARGS python3 python3-dev && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install $APT_ARGS python3-pip python3-setuptools && rm -rf /var/lib/apt/lists/*
+
+# Combine related packages to reduce layers while maintaining cache efficiency
+RUN apt-get update && apt-get install $APT_ARGS \
+  git wget unzip curl \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install $APT_ARGS \
+  g++ \
+  autotools-dev libtool m4 automake autoconf pkg-config \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install $APT_ARGS \
+  zlib1g-dev libssl1.0-dev \
+  ccache bsdmainutils cmake \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install $APT_ARGS \
+  python3 python3-dev python3-pip python3-setuptools \
+  && rm -rf /var/lib/apt/lists/*
 
 # Python stuff
 RUN pip3 install pyzmq # really needed?
