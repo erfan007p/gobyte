@@ -2,10 +2,9 @@ name: CI
 
 on:
   push:
-    branches:
-      - master
-      - v0.16.x
+    branches: [master, v0.16.x]
   pull_request:
+    branches: [master, v0.16.x]
 
 concurrency:
   group: |
@@ -27,7 +26,6 @@ jobs:
           - win32
           - win64
           - linux64
-          - linux64_gui
           - linux64_nowallet
           - linux64_release
           - mac
