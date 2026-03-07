@@ -11,14 +11,14 @@ if [ "$RUN_UNITTESTS" != "true" ]; then
   exit 0
 fi
 
-# TODO this is not Travis agnostic
-export BOOST_TEST_RANDOM=1$TRAVIS_BUILD_ID
+# Generate random seed for test reproducibility
+export BOOST_TEST_RANDOM=${BOOST_TEST_RANDOM:-1$(date +%s)}
 export LD_LIBRARY_PATH=$BUILD_DIR/depends/$HOST/lib
 
 export WINEDEBUG=fixme-all
 export BOOST_TEST_LOG_LEVEL=test_suite
 
-cd build-ci/gobytecore-$BUILD_TARGET
+cd build-ci
 
 if [ "$DIRECT_WINE_EXEC_TESTS" = "true" ]; then
   # Inside Docker, binfmt isn't working so we can't trust in make invoking windows binaries correctly

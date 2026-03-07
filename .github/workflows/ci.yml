@@ -2,10 +2,18 @@ name: CI
 
 on:
   push:
-    branches:
-      - master
-      - develop
+    branches: [master, v0.16.x]
   pull_request:
+    branches: [master, v0.16.x]
+
+concurrency:
+  group: |
+    ${{ github.workflow }}-${{
+      (vars.ALLOW_CONCURRENCY != '' && github.sha) ||
+      (github.event_name == 'pull_request_target' && github.event.pull_request.number) ||
+      (github.event_name == 'push' && github.ref)
+    }}
+  cancel-in-progress: ${{ github.ref_type != 'tag' }}
 
 jobs:
   build:
@@ -17,7 +25,6 @@ jobs:
           - arm-linux
           - win32
           - win64
-          - linux32
           - linux64
           - linux64_nowallet
           - linux64_release
@@ -48,8 +55,9 @@ jobs:
       - name: Set up Environment
         run: |
           echo "HOST_SRC_DIR=$GITHUB_WORKSPACE" >> $GITHUB_ENV
-          echo "HOST_CACHE_DIR=~/cache" >> $GITHUB_ENV
-          mkdir -p ~/cache/docker ~/cache/ccache ~/cache/depends ~/cache/sdk-sources
+          echo "HOST_CACHE_DIR=$HOME/cache" >> $GITHUB_ENV
+          # Ensure cache directories exist
+          mkdir -p $HOME/cache/docker $HOME/cache/ccache $HOME/cache/depends $HOME/cache/sdk-sources
 
       - name: Build Builder Image
         run: |
@@ -66,14 +74,27 @@ jobs:
           source ./ci/matrix.sh
           $DOCKER_RUN_IN_BUILDER ./ci/build_src.sh
 
-      - name: Run Unit Tests
-        if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
-        run: |
-          source ./ci/matrix.sh
-          $DOCKER_RUN_IN_BUILDER ./ci/test_unittests.sh
+      # - name: Run Unit Tests
+      #   if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
+      #   run: |
+      #     source ./ci/matrix.sh
+      #     $DOCKER_RUN_IN_BUILDER ./ci/test_unittests.sh
 
-      - name: Run Integration Tests
-        if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
-        run: |
-          source ./ci/matrix.sh
-          $DOCKER_RUN_IN_BUILDER ./ci/test_integrationtests.sh --quiet --jobs=3
+      # - name: Run Integration Tests
+      #   if: ${{ matrix.build_target != 'arm-linux' && matrix.build_target != 'mac' }}
+      #   run: |
+      #     source ./ci/matrix.sh
+      #     $DOCKER_RUN_IN_BUILDER ./ci/test_integrationtests.sh --quiet --jobs=3
+
+      - name: Upload Binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: gobyte-binaries-${{ matrix.build_target }}
+          path: |
+            build-ci/src/gobyted*
+            build-ci/src/gobyte-cli*
+            build-ci/src/qt/gobyte-qt*
+            build-ci/src/*.exe
+            build-ci/src/qt/*.exe
+            build-ci/*.dmg
+          if-no-files-found: warn

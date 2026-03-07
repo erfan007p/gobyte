@@ -10,7 +10,7 @@ export JOB_NUMBER=${JOB_NUMBER:-1}
 export BUILDER_IMAGE_NAME="gobyte-builder-$BUILD_TARGET-$JOB_NUMBER"
 
 export HOST_SRC_DIR=${HOST_SRC_DIR:-$(pwd)}
-export HOST_CACHE_DIR=${HOST_CACHE_DIR:-$(pwd)/ci-cache-$BUILD_TARGET}
+export HOST_CACHE_DIR=${HOST_CACHE_DIR:-$GITHUB_WORKSPACE/ci-cache-$BUILD_TARGET}
 
 export SRC_DIR=${SRC_DIR:-$HOST_SRC_DIR}
 export BUILD_DIR=$SRC_DIR
@@ -50,13 +50,6 @@ elif [ "$BUILD_TARGET" = "win64" ]; then
   export BITCOIN_CONFIG="--enable-gui --enable-reduce-exports --disable-miner"
   export DIRECT_WINE_EXEC_TESTS=true
   export RUN_UNITTESTS=true
-elif [ "$BUILD_TARGET" = "linux32" ]; then
-  export HOST=i686-pc-linux-gnu
-  export BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports --enable-stacktraces LDFLAGS=-static-libstdc++"
-  export USE_SHELL="/bin/gobyte"
-  export PYZMQ=true
-  export RUN_UNITTESTS=true
-  export RUN_INTEGRATIONTESTS=true
 elif [ "$BUILD_TARGET" = "linux64" ]; then
   export HOST=x86_64-unknown-linux-gnu
   export DEP_OPTS="NO_UPNP=1 DEBUG=1"
@@ -65,6 +58,14 @@ elif [ "$BUILD_TARGET" = "linux64" ]; then
   export PYZMQ=true
   export RUN_UNITTESTS=true
   export RUN_INTEGRATIONTESTS=true
+# elif [ "$BUILD_TARGET" = "linux64_gui" ]; then
+#   export HOST=x86_64-unknown-linux-gnu
+#   export DEP_OPTS="NO_UPNP=1 DEBUG=1 QT=1"
+#   export BITCOIN_CONFIG="--enable-gui --enable-zmq --enable-glibc-back-compat --enable-reduce-exports --enable-stacktraces"
+#   export CPPFLAGS="-DDEBUG_LOCKORDER -DENABLE_GOBYTE_DEBUG"
+#   export PYZMQ=true
+#   export RUN_UNITTESTS=true
+#   export RUN_INTEGRATIONTESTS=true
 elif [ "$BUILD_TARGET" = "linux64_nowallet" ]; then
   export HOST=x86_64-unknown-linux-gnu
   export DEP_OPTS="NO_WALLET=1"
